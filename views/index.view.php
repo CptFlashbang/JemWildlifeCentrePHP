@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <title>Document</title>
-</head>
-<body>
-    <p>Index Page</p>
-</body>
-</html>
+<?php
+require('partials/head.php');
+require('partials/nav.php');
+require('partials/banner.php');
+?>
+<main>
+    <div class="mx-auto max-w-5xl py-6 px-8">
+        <p>Hello. Welcome to the home page.</p>
+    </div>
+</main>
+<?php
+require('partials/footer.php');
+?>
