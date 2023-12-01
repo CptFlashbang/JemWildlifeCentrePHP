@@ -1,5 +1,5 @@
 <div>
-    <ul>
+    <ul class = flex>
         <li>
             <p>Facebook</p>
         </li>
