@@ -1,6 +1,6 @@
-        <footer>
+        <footer class= flex>
             &copy; <?=date("Y")?> Callum Yates
-            <div>
+            <div class="max-w-4xl">
                 <ul>
                     <li>
                         <p>Privacy Policy</p>
