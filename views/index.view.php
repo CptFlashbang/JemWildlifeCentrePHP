@@ -3,14 +3,14 @@ require('partials/head.php');
 require('partials/header.php');
 ?>
 <main>
-    <section class="h-96 flex items-center justify-center">
-        <div class="flex flex-col items-center">
+    <section class="h-96 flex items-center justify-center border-b-2 border-black">
+        <div class="flex flex-col items-center border-black border-2">
             <p class= "pb-8">Welcome, to the</p>
             <p class= "pb-8">Jem Wildlife Centre</p>
             <p>Nurturing nature, one rescue at a time</p>
             <div class="flex flex-row pt-16">
                 <p>enquiries@JemWildlifeCentre.org </p>
-                <p>(+44) 07443412378 </p>
+                <p class="px-4">(+44) 07443412378 </p>
                 <div class="flex flex-row">
                     <p>See our work</p>
                     <p>(Down arrow)</p>
@@ -18,16 +18,19 @@ require('partials/header.php');
             </div>
         </div>
     </section>
-    <br>   
-    <section>
-        <p>We have had the privilege of collaborating with these incredible conservation partners. </p>
-        <p>PARTNER 1</p>
-        <p>PARTNER 2</p>
-        <p>PARTNER 3</p>
-        <p>PARTNER 4</p>
-        <p>PARTNER 5</p>
+    <section class="h-48 flex items-center justify-center border-b-2 border-black">
+        <div class="flex flex-col items-center border-black border-2">
+            <p>We have had the privilege of collaborating with these incredible conservation partners. </p>
+            <div class="flex flex-row">
+                <p>PARTNER 1</p>
+                <p>PARTNER 2</p>
+                <p>PARTNER 3</p>
+                <p>PARTNER 4</p>
+                <p>PARTNER 5</p>
+            </div>
+            
+        </div>
     </section>
-    <br>   
     <section>
         <p>Our work</p>
         <p>Our mission is to help sick, injured and orphaned wildlife, either by rehabilitating and returning them back into the wild, or by providing a life-long home to those who would not survive in the wild.</p>
