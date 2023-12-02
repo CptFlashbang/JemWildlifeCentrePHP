@@ -1,4 +1,4 @@
-<header class = "flex">
+<header class = "flex flex-row">
     <div class="w-1/3 bg-red-200">
         <!-- <p>RED</p> -->
         <p>LOGO</p>

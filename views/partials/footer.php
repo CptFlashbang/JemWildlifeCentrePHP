@@ -1,9 +1,9 @@
-        <footer class= "flex">
+        <footer class= "flex flex-row">
             <div class="w-1/3">                
                 &copy; <?=date("Y")?> Callum Yates
             </div>
             <div class="w-1/3">
-                <ul class="flex"> 
+                <ul class="flex flex-row"> 
                     <li>
                         <p>Privacy Policy</p>
                     </li>

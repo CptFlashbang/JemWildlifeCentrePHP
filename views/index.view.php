@@ -3,15 +3,17 @@ require('partials/head.php');
 require('partials/header.php');
 ?>
 <main>
-    <section>
+    <section >
         <p>Welcome, to the</p>
         <p>Jem Wildlife Centre</p>
         <p>Nurturing nature, one rescue at a time</p>
-        <p>enquiries@JemWildlifeCentre.org </p>
-        <p>(+44) 07443412378 </p>
-        <div>
-            <p>See our work</p>
-            <p>(Down arrow)</p>
+        <div class="flex flex-row">
+            <p>enquiries@JemWildlifeCentre.org </p>
+            <p>(+44) 07443412378 </p>
+            <div>
+                <p>See our work</p>
+                <p>(Down arrow)</p>
+            </div>
         </div>
     </section>
     <br>   
