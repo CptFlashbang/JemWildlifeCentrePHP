@@ -1,7 +1,9 @@
         <footer class= flex>
-            &copy; <?=date("Y")?> Callum Yates
-            <div class="max-w-4xl">
-                <ul>
+            <div class="w-1/3">                
+                &copy; <?=date("Y")?> Callum Yates
+            </div>
+            <div class="w-1/3">
+                <ul class="flex"> 
                     <li>
                         <p>Privacy Policy</p>
                     </li>
@@ -10,10 +12,11 @@
                     </li>
                 </ul>
             </div>
-            
-            <?php
-            require('socials.php');
-            ?>
+            <div class="w-1/3">
+                <?php
+                require('socials.php');
+                ?>
+            </div>
         </footer>
     </body>
 </html>
