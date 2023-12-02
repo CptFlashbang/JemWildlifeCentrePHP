@@ -1,4 +1,4 @@
-        <footer class= flex>
+        <footer class= "flex">
             <div class="w-1/3">                
                 &copy; <?=date("Y")?> Callum Yates
             </div>
