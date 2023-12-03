@@ -62,9 +62,9 @@ require('partials/blocks.php');
             </div>
             <button class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto bg-red-700" type="button">See more</button>
             <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-3 row-end-4 mx-auto">
-                <p class="mx-12">IMAGE 1</p>
-                <p class="mx-12">IMAGE 2</p>
-                <p class="mx-12">IMAGE 3</p>
+                <img src="Images\Seal.jpg">
+                <img src="Images\Seal.jpg">
+                <img src="Images\Seal.jpg">
             </div>
         </div>
     </section>
@@ -83,9 +83,9 @@ require('partials/blocks.php');
             </div>
             <button class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto bg-red-700" type="button">See more</button>
             <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-4 row-end-5 mx-auto">
-                <p class="mx-12 bg-black">IMAGE 1</p>
-                <p class="mx-12">IMAGE 2</p>
-                <p class="mx-12">IMAGE 3</p>
+                <img src="Images\Seal.jpg">
+                <img src="Images\Seal.jpg">
+                <img src="Images\Seal.jpg">
             </div>
         </div>
     </section>
