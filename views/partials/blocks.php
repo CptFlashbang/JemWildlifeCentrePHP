@@ -10,10 +10,10 @@ function generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $co
     }
 }
 
-function generateBlockTestimonial($quote, $author, $organization) {
+function generateBlockTestimonial($quote, $author, $organisation) {
     echo '<p class="text-center text-xl">' . $quote . '</p>';
     echo '<p>IMAGE</p>';
     echo '<p>IMAGE</p>';
     echo '<p class="font-bold">' . $author . '</p>';
-    echo '<p>' . $organization . '</p>';
+    echo '<p>' . $organisation . '</p>';
 }

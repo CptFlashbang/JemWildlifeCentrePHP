@@ -1,6 +1,7 @@
 <?php
 require('partials/head.php');
 require('partials/header.php');
+require('partials/blocks.php');
 ?>
 <main>
     <section class="h-96 flex border-b-2 border-black">
@@ -37,10 +38,14 @@ require('partials/header.php');
         </div>
         <p>IMAGE</p>
         <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
-            <p class="text-center text-xl">“Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.”</p>
-            <p>IMAGE</p>
-            <p class= "font-bold"> John Smith</p>            
-            <p>WWF</p>
+            <?php
+            $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
+            $author= "John Smith";
+            $organisation= "WWF";
+            $image1 = "";
+            $image2 = "";
+            generateBlockTestimonial($quote, $author, $organisation)
+            ?>
         </div>
     </section>
     <section class="border-b-2 border-black grid grid-cols-5 grid-rows-4">
