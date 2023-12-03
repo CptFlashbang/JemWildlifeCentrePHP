@@ -6,14 +6,14 @@ require('partials/blocks.php');
 <main class="bg-blue-700">
     <section class="h-96 flex border-b-2 border-black max-w-screen-2xl bg-white mx-auto">
         <div class="flex flex-col items-center border-black border-2 mx-auto my-auto">
-            <p class= "pb-8">Welcome, to the</p>
+            <p class= "pb-8 text-3xl">Welcome, to the</p>
             <h1 class= "pb-8">Jem Wildlife Centre</h1>
-            <p>Nurturing nature, one rescue at a time</p>
+            <p class="text-xl">Nurturing nature, one rescue at a time</p>
             <div class="flex flex-row pt-16">
-                <p>enquiries@JemWildlifeCentre.org </p>
-                <p class="px-4">(+44) 07443412378 </p>
+                <p class="text-sm">enquiries@JemWildlifeCentre.org </p>
+                <p class="text-sm px-4">(+44) 07443412378 </p>
                 <div class="flex flex-row">
-                    <p>See our work</p>
+                    <p class="text-sm">See our work</p>
                     <p>(Down arrow)</p>
                 </div>
             </div>
