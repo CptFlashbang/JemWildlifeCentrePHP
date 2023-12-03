@@ -1,6 +1,8 @@
 <?php
 require('partials/head.php');
 require('partials/header.php');
+
+require('partials/blocks.php');
 ?>
 <main>
     <section class="border-b-2 border-black">
@@ -19,8 +21,14 @@ require('partials/header.php');
         <div class="mx-auto max-w-5xl py-6 px-8 grid grid-cols-2 grid-rows-4">
             <h2 class="col-start-1 col-end-3 row-start-1 row-end-2">Our core values:</h2>
             <div class="col-start-1 col-end-2 row-start-2 row-end-3  mx-auto max-w-5xl py-6 px-8 ">
-                <h3>Compassion</h3>
-                <p>We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.</p>
+                <?php
+                $headerLevel = 3; 
+                $headerContent = "Compassion";
+                $contents = [
+                    "We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.",
+                ];
+                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
             <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto max-w-5xl py-6 px-8">
                 <h3>Dedication to Rehabilitation</h3>
@@ -35,8 +43,7 @@ require('partials/header.php');
                 <p>We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.</p>
             </div>
         </div>
-    </section>
-    
+    </section>    
     <section>
         <div>
             <div>
