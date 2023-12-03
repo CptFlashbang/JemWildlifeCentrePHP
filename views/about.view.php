@@ -63,36 +63,61 @@ require('partials/blocks.php');
         </div>
     </section>    
     <section>
-        <div>
-            <div>
-                <p>“Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.”</p>
-                <p>IMAGE</p>
-                <p>John Smith</p>            
-                <p>WWF</p>
-            </div>        
-            <div>
-                <p>“Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.”</p>
-                <p>IMAGE</p>
-                <p>IMAGE</p>
-                <p>John Smith</p>            
-                <p>WWF</p>
-            </div>
+        <div class="flex flex-row">
+            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
+                <?php
+                $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
+                $author= "John Smith";
+                $organisation= "WWF";
+                $image1 = "";
+                $image2 = "";
+                generateBlockTestimonial($quote, $author, $organisation)
+                ?>
+            </div>   
+            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
+                <?php
+                $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
+                $author= "John Smith";
+                $organisation= "WWF";
+                $image1 = "";
+                $image2 = "";
+                generateBlockTestimonial($quote, $author, $organisation)
+                ?>
+            </div>      
         </div>
-        <div>
-            <div>
-                <p>A range of habitats</p>
-                <p>Immerse yourself in the world of our incredible creatures with our unique viewing areas! Explore captivating viewpoints in our gardens, woodlands, and wetlands, allowing you to get up close to the wonders of nature. </p>
-                <p>Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife.</p>
+        <div class="flex flex-row">
+            <div class="mx-auto max-w-5xl py-6 px-8">
+                <?php
+                $headerLevel = 2; 
+                $headerContent = "A range of habitats";
+                $contents = [
+                    "Immerse yourself in the world of our incredible creatures with our unique viewing areas! Explore captivating viewpoints in our gardens, woodlands, and wetlands, allowing you to get up close to the wonders of nature.",
+                    "Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife."
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
-            <div>
-                <p>Sustainable approach</p>
-                <p>From energy-efficient facilities to waste reduction initiatives, our commitment to sustainability extends to habitat preservation and wildlife conservation.</p>
-                <p>We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony.</p>
-            </div>
-            <div>
-                <p>Community engagement</p>
-                <p>Community engagement is not just a philosophy; it's a shared commitment to fostering meaningful connections between our sanctuary and the local community. </p>
-                <p>One impactful initiative involves collaborating with community members to address food waste. Through partnerships with local businesses and individuals, we intercept excess produce that might otherwise go to waste and redirect it to nourish the animals under our care.</p>
+            <div class="mx-auto max-w-5xl py-6 px-8">
+                <?php
+                $headerLevel = 2; 
+                $headerContent = "Sustainable approach";
+                $contents = [
+                    "From energy-efficient facilities to waste reduction initiatives, our commitment to sustainability extends to habitat preservation and wildlife conservation.",
+                    "We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony."
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
+            </div>            
+            <div class="mx-auto max-w-5xl py-6 px-8">
+                <?php
+                $headerLevel = 2; 
+                $headerContent = "Community engagement";
+                $contents = [
+                    "Community engagement is not just a philosophy; it's a shared commitment to fostering meaningful connections between our sanctuary and the local community. ",
+                    "One impactful initiative involves collaborating with community members to address food waste. Through partnerships with local businesses and individuals, we intercept excess produce that might otherwise go to waste and redirect it to nourish the animals under our care."
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
         </div>
     </section>
