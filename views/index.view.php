@@ -3,9 +3,9 @@ require('partials/head.php');
 require('partials/header.php');
 require('partials/blocks.php');
 ?>
-<main class="bg-blue-700">
-    <section class="h-96 flex border-b-2 border-black max-w-screen-2xl bg-white mx-auto">
-        <div class="flex flex-col items-center border-black border-2 mx-auto my-auto">
+<main class="">
+    <section class="h-96 flex border-b-2 border-black mx-auto">
+        <div class="flex flex-col items-center mx-auto my-auto">
             <p class= "pb-8 text-3xl">Welcome, to the</p>
             <h1 class= "pb-8">Jem Wildlife Centre</h1>
             <p class="text-xl">Nurturing nature, one rescue at a time</p>
@@ -19,8 +19,8 @@ require('partials/blocks.php');
             </div>
         </div>
     </section>
-    <section class="h-48 flex border-b-2 border-black max-w-screen-2xl bg-white mx-auto">
-        <div class="flex flex-col items-center border-black border-2 mx-auto my-auto">
+    <section class="h-48 flex border-b-2 border-black bg-white mx-auto">
+        <div class="flex flex-col items-center mx-auto my-auto">
             <p>We have had the privilege of collaborating with these incredible conservation partners. </p>
             <div class="flex flex-row">
                 <p class="px-4">PARTNER 1</p>
@@ -31,13 +31,13 @@ require('partials/blocks.php');
             </div>            
         </div>
     </section>
-    <section class= "justify-center items-center border-b-2 border-black max-w-screen-2xl bg-white mx-auto">
-        <div class="mx-auto max-w-screen-sm flex flex-col items-center mt-20 mb-20 border-2 border-black">
+    <section class= "justify-center items-center border-b-2 border-black bg-white mx-auto">
+        <div class="mx-auto max-w-screen-sm flex flex-col items-center mt-20 mb-20">
             <h1>Our work</h1>
             <p class="text-center">Our mission is to help sick, injured and orphaned wildlife, either by rehabilitating and returning them back into the wild, or by providing a life-long home to those who would not survive in the wild.</p>
         </div>
         <img src="Images\Seal.jpg" class="mx-auto">
-        <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
+        <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16">
             <?php
             $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
             $author= "John Smith";
@@ -48,8 +48,8 @@ require('partials/blocks.php');
             ?>
         </div>
     </section>
-    <section class="border-b-2 border-black max-w-screen-2xl bg-white mx-auto flex justify-center">
-        <div class="border-2 border-black grid auto-cols-max auto-rows-max">
+    <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
+        <div class="grid auto-cols-max auto-rows-max">
             <div class="col-start-2 col-end-3 row-start-1 row-end-3 mt-32">
                 <?php
                 $headerLevel = 1; 
@@ -62,14 +62,14 @@ require('partials/blocks.php');
             </div>
             <button class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto bg-red-700" type="button">See more</button>
             <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-3 row-end-4 mx-auto">
-                <img src="Images\Seal.jpg">
-                <img src="Images\Seal.jpg">
-                <img src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
             </div>
         </div>
     </section>
-    <section class="border-b-2 border-black max-w-screen-2xl bg-white mx-auto flex justify-center">
-        <div class="border-2 border-black grid auto-cols-max auto-rows-max">
+    <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
+        <div class="grid auto-cols-max auto-rows-max">
             <div class="col-start-2 col-end-3 row-start-1 row-end-4 mt-32">
                 <?php
                 $headerLevel = 1; 
@@ -83,9 +83,9 @@ require('partials/blocks.php');
             </div>
             <button class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto bg-red-700" type="button">See more</button>
             <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-4 row-end-5 mx-auto">
-                <img src="Images\Seal.jpg">
-                <img src="Images\Seal.jpg">
-                <img src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
             </div>
         </div>
     </section>
