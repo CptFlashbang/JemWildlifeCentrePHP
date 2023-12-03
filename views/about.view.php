@@ -7,10 +7,18 @@ require('partials/blocks.php');
 <main>
     <section class="border-b-2 border-black">
         <div class="grid grid-cols-5 grid-rows-6">
-            <h1 class="col-start-2 col-end-3 row-start-1 row-end-2 mt-32">We are the Jem wildlife centre</h1>
-            <p class="col-start-2 col-end-3 row-start-2 row-end-3">Nestled near Penkridge in Staffordshire, Jem Wildlife Centre is a refuge for British wildlife in need. Dedicated to the rescue and care of sick, injured, and orphaned animals, our mission is woven into every pawprint and feathered wing.</p>
-            <p class="col-start-2 col-end-3 row-start-3 row-end-4 my-auto">From the resilient European Hedgehogs to the graceful strides of Red Foxes, each resident embodies the spirit of our commitment. Inhabitants like Roe Deer, alongside the harmonious presence of Common Toads, and the majestic grace of Red Deer, find solace within our sanctuary.</p>
-            <p class="col-start-2 col-end-3 row-start-4 row-end-5 my-auto">Our haven extends to the skies, where the majestic presence of Barn Owls and the melodious songs of Skylarks echo our dedication. Join us in safeguarding the wonders of the wild. Jem Wildlife Centre: A refuge for compassion, conservation, and the love of nature.</p>   
+            <div class="col-start-2 col-end-3 row-start-1 row-end-5 mt-32">
+                <?php
+                $headerLevel = 3; 
+                $headerContent = "We are the Jem wildlife centre";
+                $contents = [
+                    "Nestled near Penkridge in Staffordshire, Jem Wildlife Centre is a refuge for British wildlife in need. Dedicated to the rescue and care of sick, injured, and orphaned animals, our mission is woven into every pawprint and feathered wing.",
+                    "From the resilient European Hedgehogs to the graceful strides of Red Foxes, each resident embodies the spirit of our commitment. Inhabitants like Roe Deer, alongside the harmonious presence of Common Toads, and the majestic grace of Red Deer, find solace within our sanctuary.",
+                    "Our haven extends to the skies, where the majestic presence of Barn Owls and the melodious songs of Skylarks echo our dedication. Join us in safeguarding the wonders of the wild. Jem Wildlife Centre: A refuge for compassion, conservation, and the love of nature.",
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
+            </div>
             <p class="col-start-4 col-end-5 row-start-4 row-end-5 my-auto">SEE MORE BUTTON</p>
             <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-5 row-end-6 mx-auto">
                 <p class="mx-12">IMAGE 1</p>
