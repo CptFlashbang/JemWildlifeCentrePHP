@@ -26,7 +26,7 @@ require('partials/blocks.php');
                 <p class="mx-12">IMAGE 3</p>
             </div>
         </div>
-        <div class="mx-auto max-w-5xl py-6 px-8 grid grid-cols-2 grid-rows-4">
+        <div class="mx-auto max-w-5xl py-6 px-8 grid auto-cols-max auto-rows-max">
             <h2 class="col-start-1 col-end-3 row-start-1 row-end-2 my-auto">Our core values:</h2>
             <div class="col-start-1 col-end-2 row-start-2 row-end-3  mx-auto max-w-5xl py-6 px-8 ">
                 <?php
