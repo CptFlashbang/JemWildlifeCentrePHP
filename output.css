@@ -659,14 +659,6 @@ nav a[aria-current="page"] {
   isolation: auto;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.col-start-4 {
-  grid-column-start: 4;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -675,16 +667,8 @@ nav a[aria-current="page"] {
   grid-column-start: 2;
 }
 
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.col-start-6 {
-  grid-column-start: 6;
-}
-
-.col-end-1 {
-  grid-column-end: 1;
+.col-start-4 {
+  grid-column-start: 4;
 }
 
 .col-end-2 {
@@ -695,32 +679,16 @@ nav a[aria-current="page"] {
   grid-column-end: 3;
 }
 
-.col-end-4 {
-  grid-column-end: 4;
-}
-
 .col-end-5 {
   grid-column-end: 5;
 }
 
-.col-end-7 {
-  grid-column-end: 7;
-}
-
-.row-span-4 {
-  grid-row: span 4 / span 4;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
+.row-start-1 {
+  grid-row-start: 1;
 }
 
 .row-start-2 {
   grid-row-start: 2;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
 }
 
 .row-start-3 {
@@ -731,8 +699,8 @@ nav a[aria-current="page"] {
   grid-row-start: 4;
 }
 
-.row-end-1 {
-  grid-row-end: 1;
+.row-start-5 {
+  grid-row-start: 5;
 }
 
 .row-end-2 {
@@ -749,6 +717,10 @@ nav a[aria-current="page"] {
 
 .row-end-5 {
   grid-row-end: 5;
+}
+
+.row-end-6 {
+  grid-row-end: 6;
 }
 
 .float-right {
@@ -783,6 +755,11 @@ nav a[aria-current="page"] {
   margin: 0px;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -791,11 +768,6 @@ nav a[aria-current="page"] {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .mb-16 {
@@ -1297,12 +1269,8 @@ nav a[aria-current="page"] {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-5 {
@@ -1315,6 +1283,10 @@ nav a[aria-current="page"] {
 
 .grid-rows-5 {
   grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row {
