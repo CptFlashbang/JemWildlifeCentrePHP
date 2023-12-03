@@ -31,16 +31,34 @@ require('partials/blocks.php');
                 ?>
             </div>
             <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto max-w-5xl py-6 px-8">
-                <h3>Dedication to Rehabilitation</h3>
-                <p>We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.</p>
+                <?php
+                $headerLevel = 3; 
+                $headerContent = "Dedication to Rehabilitation";
+                $contents = [
+                    "We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.",
+                ];
+                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
             <div class="col-start-1 col-end-2 row-start-3 row-end-4 mx-auto max-w-5xl py-6 px-8">
-                <h3>Respect for Nature</h3>
-                <p>We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.</p>
+                <?php
+                $headerLevel = 3; 
+                $headerContent = "Respect for Nature";
+                $contents = [
+                    "We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.",
+                ];
+                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
             <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto max-w-5xl py-6 px-8">
-                <h3>Dedication to Rehabilitation</h3>
-                <p>We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.</p>
+                <?php
+                $headerLevel = 3; 
+                $headerContent = "Wildlife in the community";
+                $contents = [
+                    "We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.",
+                ];
+                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
         </div>
     </section>    
