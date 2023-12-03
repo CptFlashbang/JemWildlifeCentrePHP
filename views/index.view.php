@@ -48,7 +48,7 @@ require('partials/blocks.php');
             ?>
         </div>
     </section>
-    <section class="border-b-2 border-black grid grid-cols-5 grid-rows-4">
+    <section class="border-b-2 border-black grid auto-cols-max auto-rows-max">
         <h1 class="col-start-2 col-end-3 row-start-1 row-end-2 mt-32">Our residents</h1>
         <p class="col-start-2 col-end-3 row-start-2 row-end-3">Meet a few of our incredible residents! On our homepage, you'll catch a glimpse of three remarkable animals, each with its own unique story and charm. These featured creatures represent just a fraction of the diverse wildlife thriving at Jem Wildlife Centre. Curious to discover more? Click the link to explore our full roster of fascinating animals, each contributing to the rich tapestry of life we cherish and protect in our sanctuary.</p>
         <p class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto">SEE MORE BUTTON</p>
@@ -58,7 +58,7 @@ require('partials/blocks.php');
             <p class="mx-12">IMAGE 3</p>
         </div>
     </section>
-    <section class="border-b-2 border-black grid grid-cols-5 grid-rows-5">
+    <section class="border-b-2 border-black grid auto-cols-max auto-rows-max">
         <h1 class="col-start-2 col-end-3 row-start-1 row-end-2 mt-32">Events</h1>
         <p class="col-start-2 col-end-3 row-start-2 row-end-3">Explore the excitement awaiting you at Jem Wildlife Centre! Right on our homepage, we spotlight three upcoming events designed to cater to diverse interests and age groups. Whether it's an exclusive gathering for adults, a fun-filled experience for families, or an engaging adventure tailored for children, our events promise something special for everyone. </p>
         <p class="col-start-2 col-end-3 row-start-3 row-end-4">Intrigued? Dive into the details and mark your calendar for a memorable experience. Click the link below to discover the full spectrum of events we have in store, each crafted with a touch of wonder and a commitment to wildlife education and enjoyment.</p>
