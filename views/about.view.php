@@ -26,9 +26,9 @@ require('partials/blocks.php');
                 <p class="mx-12">IMAGE 3</p>
             </div>
         </div>
-        <div class="mx-auto max-w-5xl py-6 px-8 grid auto-cols-max auto-rows-max">
+        <div class="mx-auto max-w-fit py-6 px-8 grid auto-cols-max auto-rows-max">
             <h2 class="col-start-1 col-end-3 row-start-1 row-end-2 my-auto">Our core values:</h2>
-            <div class="col-start-1 col-end-2 row-start-2 row-end-3  mx-auto max-w-5xl py-6 px-8 ">
+            <div class="col-start-1 col-end-2 row-start-2 row-end-3 mx-auto py-6 px-8 ">
                 <?php
                 $headerLevel = 3; 
                 $headerContent = "Compassion";
@@ -38,7 +38,7 @@ require('partials/blocks.php');
                 generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
-            <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto max-w-5xl py-6 px-8">
+            <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto">
                 <?php
                 $headerLevel = 3; 
                 $headerContent = "Dedication to Rehabilitation";
@@ -48,7 +48,7 @@ require('partials/blocks.php');
                 generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
-            <div class="col-start-1 col-end-2 row-start-3 row-end-4 mx-auto max-w-5xl py-6 px-8">
+            <div class="col-start-1 col-end-2 row-start-3 row-end-4 mx-auto">
                 <?php
                 $headerLevel = 3; 
                 $headerContent = "Respect for Nature";
@@ -58,7 +58,7 @@ require('partials/blocks.php');
                 generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
-            <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto max-w-5xl py-6 px-8">
+            <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto">
                 <?php
                 $headerLevel = 3; 
                 $headerContent = "Wildlife in the community";
