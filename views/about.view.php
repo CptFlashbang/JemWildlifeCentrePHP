@@ -70,7 +70,7 @@ require('partials/blocks.php');
             </div>
         </div>
     </section>    
-    <section>
+    <section class="border-b-2 border-black">
         <div class="flex flex-row">
             <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
                 <?php
