@@ -950,6 +950,14 @@ nav a[aria-current="page"] {
   max-width: 1536px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-prose {
+  max-width: 65ch;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }

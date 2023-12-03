@@ -6,7 +6,7 @@ function generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $co
     echo "<h{$headerLevel}>$headerContent</h{$headerLevel}>";
 
     foreach ($contents as $content) {
-        echo '<p class="py-4">' . $content . '</p>';
+        echo '<p class="py-4 max-w-prose">' . $content . '</p>';
     }
 }
 
