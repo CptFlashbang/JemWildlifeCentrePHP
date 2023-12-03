@@ -21,9 +21,9 @@ require('partials/blocks.php');
             </div>
             <p class="col-start-4 col-end-5 row-start-4 row-end-5 my-auto">SEE MORE BUTTON</p>
             <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-5 row-end-6 mx-auto">
-                <p class="mx-12">IMAGE 1</p>
-                <p class="mx-12">IMAGE 2</p>
-                <p class="mx-12">IMAGE 3</p>
+                <img src="Images\Seal.jpg">
+                <img src="Images\Seal.jpg">
+                <img src="Images\Seal.jpg">
             </div>
         </div>
         <div class="mx-auto max-w-fit py-6 px-8 grid auto-cols-max auto-rows-max">
