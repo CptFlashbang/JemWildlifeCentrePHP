@@ -36,7 +36,7 @@ require('partials/blocks.php');
             <h1>Our work</h1>
             <p class="text-center">Our mission is to help sick, injured and orphaned wildlife, either by rehabilitating and returning them back into the wild, or by providing a life-long home to those who would not survive in the wild.</p>
         </div>
-        <p>IMAGE</p>
+        <img src="Images\Seal.jpg" class="mx-auto">
         <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
             <?php
             $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
