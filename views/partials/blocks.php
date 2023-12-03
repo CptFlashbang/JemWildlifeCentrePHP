@@ -1,6 +1,6 @@
 <?php
 
-function block_header_and_content_vertical($headerLevel, $headerContent, $contents) {
+function generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents) {
     $headerLevel = max(1, min(6, $headerLevel)); 
 
     echo "<h{$headerLevel}>$headerContent</h{$headerLevel}>";
@@ -9,3 +9,4 @@ function block_header_and_content_vertical($headerLevel, $headerContent, $conten
         echo "<p>{$content}</p>";
     }
 }
+

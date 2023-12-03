@@ -27,7 +27,7 @@ require('partials/blocks.php');
                 $contents = [
                     "We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.",
                 ];
-                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
             <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto max-w-5xl py-6 px-8">
@@ -37,7 +37,7 @@ require('partials/blocks.php');
                 $contents = [
                     "We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.",
                 ];
-                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
             <div class="col-start-1 col-end-2 row-start-3 row-end-4 mx-auto max-w-5xl py-6 px-8">
@@ -47,7 +47,7 @@ require('partials/blocks.php');
                 $contents = [
                     "We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.",
                 ];
-                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
             <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto max-w-5xl py-6 px-8">
@@ -57,7 +57,7 @@ require('partials/blocks.php');
                 $contents = [
                     "We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.",
                 ];
-                block_header_and_content_vertical($headerLevel, $headerContent, $contents);
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
         </div>
@@ -72,6 +72,7 @@ require('partials/blocks.php');
             </div>        
             <div>
                 <p>“Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.”</p>
+                <p>IMAGE</p>
                 <p>IMAGE</p>
                 <p>John Smith</p>            
                 <p>WWF</p>
