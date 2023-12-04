@@ -127,8 +127,10 @@ require('partials/blocks.php');
             </div>
         </div>
     </section>
+    <?php    
+    require('partials/banner.php');
+    ?>
 </main>
 <?php
-require('partials/banner.php');
 require('partials/footer.php');
 ?>
