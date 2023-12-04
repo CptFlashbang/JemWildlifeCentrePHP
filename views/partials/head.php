@@ -6,4 +6,4 @@
     <title>Jem Wildlife Centre</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col">

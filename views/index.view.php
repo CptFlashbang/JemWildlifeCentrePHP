@@ -3,7 +3,7 @@ require('partials/head.php');
 require('partials/header.php');
 require('partials/blocks.php');
 ?>
-<main class="">
+<main class="flex-grow">
     <section class="h-96 flex border-b-2 border-black mx-auto">
         <div class="flex flex-col items-center mx-auto my-auto">
             <p class= "pb-8 text-3xl">Welcome, to the</p>

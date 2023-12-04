@@ -3,7 +3,7 @@ require('partials/head.php');
 require('partials/header.php');
 require('partials/blocks.php');
 ?>
-<main>
+<main class="flex-grow"> 
     <section class="border-b-2 border-black mx-auto flex justify-center">
         <div class="grid auto-cols-max auto-rows-max">
             <div class="col-start-1 col-end-3 row-start-1 row-end-2 mt-32">
