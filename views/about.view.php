@@ -1,15 +1,14 @@
 <?php
 require('partials/head.php');
 require('partials/header.php');
-
 require('partials/blocks.php');
 ?>
 <main>
-    <section class="border-b-2 border-black">
-        <div class="grid grid-cols-5 grid-rows-6">
-            <div class="col-start-2 col-end-3 row-start-1 row-end-5 mt-32">
+    <section class="border-b-2 border-black mx-auto flex justify-center">
+        <div class="grid auto-cols-max auto-rows-max">
+            <div class="col-start-1 col-end-3 row-start-1 row-end-2 mt-32">
                 <?php
-                $headerLevel = 3; 
+                $headerLevel = 1; 
                 $headerContent = "We are the Jem wildlife centre";
                 $contents = [
                     "Nestled near Penkridge in Staffordshire, Jem Wildlife Centre is a refuge for British wildlife in need. Dedicated to the rescue and care of sick, injured, and orphaned animals, our mission is woven into every pawprint and feathered wing.",
@@ -19,54 +18,53 @@ require('partials/blocks.php');
                 generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
-            <p class="col-start-4 col-end-5 row-start-4 row-end-5 my-auto">SEE MORE BUTTON</p>
-            <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-5 row-end-6 mx-auto">
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-2 row-end-3 mx-auto">
                 <img class="mx-3" src="Images\Seal.jpg">
                 <img class="mx-3" src="Images\Seal.jpg">
                 <img class="mx-3" src="Images\Seal.jpg">
             </div>
-        </div>
-        <div class="mx-auto max-w-fit py-6 px-8 grid auto-cols-max auto-rows-max">
-            <h2 class="col-start-1 col-end-3 row-start-1 row-end-2 my-auto">Our core values:</h2>
-            <div class="col-start-1 col-end-2 row-start-2 row-end-3 mx-auto py-6 px-8 ">
-                <?php
-                $headerLevel = 3; 
-                $headerContent = "Compassion";
-                $contents = [
-                    "We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.",
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
-            </div>
-            <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto">
-                <?php
-                $headerLevel = 3; 
-                $headerContent = "Dedication to Rehabilitation";
-                $contents = [
-                    "We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.",
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
-            </div>
-            <div class="col-start-1 col-end-2 row-start-3 row-end-4 mx-auto">
-                <?php
-                $headerLevel = 3; 
-                $headerContent = "Respect for Nature";
-                $contents = [
-                    "We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.",
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
-            </div>
-            <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto">
-                <?php
-                $headerLevel = 3; 
-                $headerContent = "Wildlife in the community";
-                $contents = [
-                    "We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.",
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
+            <div class="col-start-1 col-end-3 row-start-3 row-end-4 mx-auto max-w-fit py-6 px-8 grid auto-cols-max auto-rows-max">
+                <h2 class="col-start-1 col-end-3 row-start-1 row-end-2 my-auto pb-16">Our core values:</h2>
+                <div class="col-start-1 col-end-2 row-start-2 row-end-3 mx-auto py-6 px-8 ">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Compassion";
+                    $contents = [
+                        "We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+                <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto py-6 px-8">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Dedication to Rehabilitation";
+                    $contents = [
+                        "We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+                <div class="col-start-1 col-end-2 row-start-3 row-end-4 mmx-auto py-6 px-8">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Respect for Nature";
+                    $contents = [
+                        "We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+                <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto py-6 px-8">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Wildlife in the community";
+                    $contents = [
+                        "We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
             </div>
         </div>
     </section>    

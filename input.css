@@ -10,7 +10,13 @@
     @apply w-fit h-fit px-6 py-2 font-semibold rounded-md bg-brown-800 text-white block;
   }
   h1 {
+    @apply text-6xl;
+  }
+  h2 {
     @apply text-5xl;
+  }
+  h3 {
+    @apply text-4xl;
   }
 }
 
