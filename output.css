@@ -599,6 +599,39 @@ h3 {
   line-height: 2.5rem;
 }
 
+.faq-item {
+  max-width: 600px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.answer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.answer-list li::before {
+  content: '\2022';
+  /* Bullet point */
+  color: #4a5568;
+  /* Adjust the color as needed */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.answer-list li {
+  margin-bottom: 8px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2098,16 +2131,16 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
 
 .pt-16 {
   padding-top: 4rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .text-left {

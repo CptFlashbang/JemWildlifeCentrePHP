@@ -2,6 +2,7 @@
 require('partials/head.php');
 require('partials/header.php');
 require('partials/banner.php');
+require('partials/blocks.php');
 ?>
 <main>
     <div class="mx-auto max-w-5xl py-6 px-8">
