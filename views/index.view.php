@@ -50,7 +50,7 @@ require('partials/blocks.php');
     </section>
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
         <div class="grid auto-cols-max auto-rows-max">
-            <div class="col-start-2 col-end-3 row-start-1 row-end-3 mt-32">
+            <div class="col-start-1 col-end-2 row-start-1 row-end-3 mt-32">
                 <?php
                 $headerLevel = 1; 
                 $headerContent = "Our residents";
@@ -60,8 +60,9 @@ require('partials/blocks.php');
                 generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
-            <button class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto bg-red-700" type="button">See more</button>
-            <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-3 row-end-4 mx-auto">
+            <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
+
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-3 row-end-4 mx-auto">
                 <img class="mx-3" src="Images\Seal.jpg">
                 <img class="mx-3" src="Images\Seal.jpg">
                 <img class="mx-3" src="Images\Seal.jpg">
@@ -70,7 +71,7 @@ require('partials/blocks.php');
     </section>
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
         <div class="grid auto-cols-max auto-rows-max">
-            <div class="col-start-2 col-end-3 row-start-1 row-end-4 mt-32">
+            <div class="col-start-1 col-end-2 row-start-1 row-end-3 mt-32">
                 <?php
                 $headerLevel = 1; 
                 $headerContent = "Events";
@@ -81,8 +82,8 @@ require('partials/blocks.php');
                 generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
                 ?>
             </div>
-            <button class="col-start-4 col-end-5 row-start-2 row-end-3 my-auto bg-red-700" type="button">See more</button>
-            <div class="flex flex-row mt-20 mb-32 col-start-2 col-end-5 row-start-4 row-end-5 mx-auto">
+            <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-4 row-end-5 mx-auto">
                 <img class="mx-3" src="Images\Seal.jpg">
                 <img class="mx-3" src="Images\Seal.jpg">
                 <img class="mx-3" src="Images\Seal.jpg">
