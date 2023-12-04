@@ -16,4 +16,6 @@ $answers = [
      'status' => 'Visible'],
 ];
 
+
 require "views/contact.view.php";
+
