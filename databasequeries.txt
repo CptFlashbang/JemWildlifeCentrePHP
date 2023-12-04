@@ -1,0 +1,159 @@
+CREATE TABLE `Conservation_Status` (
+  `Conservation_Status_PK` int(1) NOT NULL,
+  `Abbreviation` varchar(2) DEFAULT NULL,
+  `Conservation_Status_Name` varchar(25) DEFAULT NULL,
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+    
+    ALTER TABLE `Conservation_Status`
+  ADD PRIMARY KEY (`Conservation_Status_PK`);
+ALTER TABLE `Conservation_Status`
+  MODIFY `Conservation_Status_PK` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+
+CREATE TABLE `Species_Information` (
+  `Species_ID_PK` int(10) NOT NULL AUTO_INCREMENT,
+  `Genus` varchar(30) DEFAULT NULL,
+  `Species` varchar(30) DEFAULT NULL,
+  `Common_Name` varchar(50) DEFAULT NULL,
+  `Conservation_Status_FK` int(10) NOT NULL
+  PRIMARY KEY (`Species_ID_PK`),
+  FOREIGN KEY (`Conservation_Status_FK`) REFERENCES `Conservation_Status`(`Conservation_Status_PK`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+CREATE TABLE `Animal` (
+    `Animal_ID_PK` int(10) NOT NULL AUTO_INCREMENT,
+    `Species_ID_FK` int(10) NOT NULL AUTO_INCREMENT,
+    `Name` varchar(30) DEFAULT NULL,
+    `Sex` varchar(1) DEFAULT NULL,
+    `General_Appearance` varchar(200) DEFAULT NULL,
+    `Distinctive_Markings` varchar(200) DEFAULT NULL,
+    `Date_Of_Admission` DATE DEFAULT NULL,
+    `Location_Found` varchar(200) DEFAULT NULL
+  PRIMARY KEY (`Animal_ID_PK`),
+  FOREIGN KEY (`Species_ID_FK`) REFERENCES `Species_Information`(`Species_ID_PK`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+
+-- Animal 1
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (1, 'Spike', 'M', 'Prickly fur', 'None', '2023-01-01', 'Forest');
+
+-- Animal 2
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (2, 'Ruby', 'F', 'Red coat', 'White-tipped tail', '2023-02-15', 'Meadow');
+
+-- Animal 3
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (3, 'Buddy', 'M', 'Black and white stripes', 'Bushy tail', '2023-03-20', 'Woodland');
+
+-- Animal 4
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (4, 'Doe', 'F', 'Slim body with white tail', 'None', '2023-04-10', 'Meadow');
+
+-- Animal 5
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (5, 'Pip', 'M', 'Small and brown', 'Fast flyer', '2023-05-15', 'Cave');
+
+-- Animal 6
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (6, 'Warty', 'M', 'Bumpy skin', 'Large parotid glands', '2023-06-20', 'Pond');
+
+-- Animal 7
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (7, 'Soprano', 'F', 'Small and agile', 'Distinctive wing patterns', '2023-07-25', 'Tree');
+
+-- Animal 8
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (8, 'Hoppy', 'M', 'Smooth skin', 'Long legs', '2023-08-30', 'Marsh');
+
+-- Animal 9
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (9, 'Rudolph', 'M', 'Large antlers', 'Reddish-brown coat', '2023-09-05', 'Woodland');
+
+-- Animal 10
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (10, 'Tiny', 'F', 'Tiny and fast', 'Shiny fur', '2023-10-10', 'Garden');
+
+-- Animal 11
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (11, 'Owliver', 'M', 'Feathery wings', 'Heart-shaped face', '2024-01-15', 'Barn');
+
+-- Animal 12
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (12, 'Larky', 'F', 'Brown feathers', 'Long beak', '2024-02-20', 'Field');
+
+-- Animal 13
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (1, 'Quill', 'M', 'Spiky coat', 'Short legs', '2024-03-25', 'Forest');
+
+-- Animal 14
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (2, 'Rusty', 'M', 'Reddish-brown fur', 'Bushy tail', '2024-04-30', 'Meadow');
+
+-- Animal 15
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (3, 'Stripe', 'F', 'Black and white stripes', 'Short legs', '2024-05-05', 'Woodland');
+
+-- Animal 16
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (4, 'Bambi', 'M', 'Slim body with antlers', 'White tail', '2024-06-10', 'Meadow');
+
+-- Animal 17
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (5, 'Flutter', 'F', 'Small and agile', 'Fast flyer', '2024-07-15', 'Cave');
+
+-- Animal 18
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (6, 'Wartooth', 'M', 'Bumpy skin', 'Large parotid glands', '2024-08-20', 'Pond');
+
+-- Animal 19
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (7, 'Harmony', 'F', 'Smooth skin', 'Distinctive wing patterns', '2024-09-25', 'Tree');
+
+-- Animal 20
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (8, 'Jumpy', 'M', 'Brown fur', 'Long legs', '2024-10-30', 'Marsh');
+
+-- Animal 21
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (9, 'Eddy', 'M', 'Large antlers', 'Brown fur', '2024-11-05', 'Woodland');
+
+-- Animal 22
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (10, 'Speedy', 'F', 'Tiny and fast', 'Shiny fur', '2024-12-10', 'Garden');
+
+-- Animal 23
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (11, 'Melody', 'F', 'Feathery coat', 'Wide wingspan', '2025-01-15', 'Nest');
+
+-- Animal 24
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (12, 'Skyler', 'M', 'White feathers', 'Heart-shaped face', '2025-02-20', 'Sky');
+
+-- Animal 25
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (1, 'Needle', 'M', 'Prickly fur', 'None', '2025-03-25', 'Forest');
+
+-- Animal 26
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (2, 'Scarlet', 'F', 'Red coat', 'White-tipped tail', '2025-04-30', 'Meadow');
+
+-- Animal 27
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (3, 'Panda', 'M', 'Black and white stripes', 'Bushy tail', '2025-05-05', 'Woodland');
+
+-- Animal 28
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (4, 'Spotty', 'F', 'Spotted coat', 'Playful demeanor', '2023-11-15', 'Field');
+
+-- Animal 29
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (10, 'Squeakster', 'M', 'Small and vocal', 'Short tail', '2023-12-20', 'Hollow');
+
+-- Animal 30
+INSERT INTO `Animal` (`Species_ID_FK`, `Name`, `Sex`, `General_Appearance`, `Distinctive_Markings`, `Date_Of_Admission`, `Location_Found`)
+VALUES (12, 'Feathers', 'F', 'Feathery coat', 'Wide wingspan', '2024-01-01', 'Nest');
+
+UPDATE `Animal`
+SET `Date_Of_Admission` = DATE_SUB('2023-04-12', INTERVAL FLOOR(RAND() * 365) DAY)
+WHERE 1;
