@@ -73,15 +73,9 @@ require('partials/blocks.php');
                 <p class="py-4 max-w-prose">We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony.</p>
             </div>            
             <div class="mx-auto max-w-5xl py-6 px-8">
-                <?php
-                $headerLevel = 2; 
-                $headerContent = "Community engagement";
-                $contents = [
-                    "Community engagement is not just a philosophy; it's a shared commitment to fostering meaningful connections between our sanctuary and the local community. ",
-                    "One impactful initiative involves collaborating with community members to address food waste. Through partnerships with local businesses and individuals, we intercept excess produce that might otherwise go to waste and redirect it to nourish the animals under our care."
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
+                <h2>Community engagement</h2>
+                <p class="py-4 max-w-prose">Community engagement is not just a philosophy; it's a shared commitment to fostering meaningful connections between our sanctuary and the local community.</p>
+                <p class="py-4 max-w-prose">One impactful initiative involves collaborating with community members to address food waste. Through partnerships with local businesses and individuals, we intercept excess produce that might otherwise go to waste and redirect it to nourish the animals under our care.</p>
             </div>
         </div>
     </section>
