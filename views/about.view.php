@@ -20,14 +20,8 @@ require('partials/blocks.php');
             <div class="col-start-1 col-end-3 row-start-3 row-end-4 mx-auto max-w-fit py-6 px-8 grid auto-cols-max auto-rows-max">
                 <h2 class="col-start-1 col-end-3 row-start-1 row-end-2 my-auto pb-16">Our core values:</h2>
                 <div class="col-start-1 col-end-2 row-start-2 row-end-3 mx-auto py-6 px-8 ">
-                    <?php
-                    $headerLevel = 3; 
-                    $headerContent = "Compassion";
-                    $contents = [
-                        "We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.",
-                    ];
-                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                    ?>
+                    <h3>Compassion</h3>
+                    <p class="py-4 max-w-prose">We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.</p>
                 </div>
                 <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto py-6 px-8">
                     <?php
