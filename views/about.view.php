@@ -63,15 +63,9 @@ require('partials/blocks.php');
         </div>
         <div class="flex flex-row">
             <div class="mx-auto max-w-5xl py-6 px-8">
-                <?php
-                $headerLevel = 2; 
-                $headerContent = "A range of habitats";
-                $contents = [
-                    "Immerse yourself in the world of our incredible creatures with our unique viewing areas! Explore captivating viewpoints in our gardens, woodlands, and wetlands, allowing you to get up close to the wonders of nature.",
-                    "Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife."
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
+                <h2>A range of habitats</h2>
+                <p class="py-4 max-w-prose">Immerse yourself in the world of our incredible creatures with our unique viewing areas! Explore captivating viewpoints in our gardens, woodlands, and wetlands, allowing you to get up close to the wonders of nature.</p>
+                <p class="py-4 max-w-prose">Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife.</p>
             </div>
             <div class="mx-auto max-w-5xl py-6 px-8">
                 <?php
