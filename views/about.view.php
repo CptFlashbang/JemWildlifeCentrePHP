@@ -1,78 +1,136 @@
 <?php
 require('partials/head.php');
 require('partials/header.php');
+require('partials/blocks.php');
 ?>
-<main>
-    <section>
-        <div class="mx-auto max-w-5xl py-6 px-8">
-            <p>We are the Jem wildlife centre</p>
-            <p>Nestled near Penkridge in Staffordshire, Jem Wildlife Centre is a refuge for British wildlife in need. Dedicated to the rescue and care of sick, injured, and orphaned animals, our mission is woven into every pawprint and feathered wing.</p>
-            <p>From the resilient European Hedgehogs to the graceful strides of Red Foxes, each resident embodies the spirit of our commitment. Inhabitants like Roe Deer, alongside the harmonious presence of Common Toads, and the majestic grace of Red Deer, find solace within our sanctuary.</p>
-            <p>Our haven extends to the skies, where the majestic presence of Barn Owls and the melodious songs of Skylarks echo our dedication. Join us in safeguarding the wonders of the wild. Jem Wildlife Centre: A refuge for compassion, conservation, and the love of nature.</p>
+<main class="flex-grow"> 
+    <section class="border-b-2 border-black mx-auto flex justify-center">
+        <div class="grid auto-cols-max auto-rows-max">
+            <div class="col-start-1 col-end-3 row-start-1 row-end-2 mt-32">
+                <?php
+                $headerLevel = 1; 
+                $headerContent = "We are the Jem wildlife centre";
+                $contents = [
+                    "Nestled near Penkridge in Staffordshire, Jem Wildlife Centre is a refuge for British wildlife in need. Dedicated to the rescue and care of sick, injured, and orphaned animals, our mission is woven into every pawprint and feathered wing.",
+                    "From the resilient European Hedgehogs to the graceful strides of Red Foxes, each resident embodies the spirit of our commitment. Inhabitants like Roe Deer, alongside the harmonious presence of Common Toads, and the majestic grace of Red Deer, find solace within our sanctuary.",
+                    "Our haven extends to the skies, where the majestic presence of Barn Owls and the melodious songs of Skylarks echo our dedication. Join us in safeguarding the wonders of the wild. Jem Wildlife Centre: A refuge for compassion, conservation, and the love of nature.",
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
+            </div>
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-2 row-end-3 mx-auto">
+                <img class="mx-3" src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
+                <img class="mx-3" src="Images\Seal.jpg">
+            </div>
+            <div class="col-start-1 col-end-3 row-start-3 row-end-4 mx-auto max-w-fit py-6 px-8 grid auto-cols-max auto-rows-max">
+                <h2 class="col-start-1 col-end-3 row-start-1 row-end-2 my-auto pb-16">Our core values:</h2>
+                <div class="col-start-1 col-end-2 row-start-2 row-end-3 mx-auto py-6 px-8 ">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Compassion";
+                    $contents = [
+                        "We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+                <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto py-6 px-8">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Dedication to Rehabilitation";
+                    $contents = [
+                        "We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+                <div class="col-start-1 col-end-2 row-start-3 row-end-4 mmx-auto py-6 px-8">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Respect for Nature";
+                    $contents = [
+                        "We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+                <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto py-6 px-8">
+                    <?php
+                    $headerLevel = 3; 
+                    $headerContent = "Wildlife in the community";
+                    $contents = [
+                        "We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.",
+                    ];
+                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                    ?>
+                </div>
+            </div>
         </div>
-        <div class="mx-auto max-w-5xl py-6 px-8">
-            <p>IMAGE 1</p>
-            <p>IMAGE 2</p>
-            <p>IMAGE 3</p>
+    </section>    
+    <section class="border-b-2 border-black">
+        <div class="flex flex-row">
+            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
+                <?php
+                $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
+                $author= "John Smith";
+                $organisation= "WWF";
+                $image1 = "";
+                $image2 = "";
+                generateBlockTestimonial($quote, $author, $organisation)
+                ?>
+            </div>   
+            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
+                <?php
+                $quote = "Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.";
+                $author= "John Smith";
+                $organisation= "WWF";
+                $image1 = "";
+                $image2 = "";
+                generateBlockTestimonial($quote, $author, $organisation)
+                ?>
+            </div>      
         </div>
-        <div class="mx-auto max-w-5xl py-6 px-8">
-            <p>Our core values:</p>
+        <div class="flex flex-row">
             <div class="mx-auto max-w-5xl py-6 px-8">
-                <div class="mx-auto max-w-5xl py-6 px-8">
-                    <p>Compassion</p>
-                    <p>We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.</p>
-                </div>
-                <div class="mx-auto max-w-5xl py-6 px-8">
-                    <p>Dedication to Rehabilitation</p>
-                    <p>We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.</p>
-                </div>
-                <div class="mx-auto max-w-5xl py-6 px-8">
-                    <p>Respect for Nature</p>
-                    <p>We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.</p>
-                </div>
-                <div class="mx-auto max-w-5xl py-6 px-8">
-                    <p>Dedication to Rehabilitation</p>
-                    <p>We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.</p>
-                </div>
+                <?php
+                $headerLevel = 2; 
+                $headerContent = "A range of habitats";
+                $contents = [
+                    "Immerse yourself in the world of our incredible creatures with our unique viewing areas! Explore captivating viewpoints in our gardens, woodlands, and wetlands, allowing you to get up close to the wonders of nature.",
+                    "Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife."
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
+            </div>
+            <div class="mx-auto max-w-5xl py-6 px-8">
+                <?php
+                $headerLevel = 2; 
+                $headerContent = "Sustainable approach";
+                $contents = [
+                    "From energy-efficient facilities to waste reduction initiatives, our commitment to sustainability extends to habitat preservation and wildlife conservation.",
+                    "We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony."
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
+            </div>            
+            <div class="mx-auto max-w-5xl py-6 px-8">
+                <?php
+                $headerLevel = 2; 
+                $headerContent = "Community engagement";
+                $contents = [
+                    "Community engagement is not just a philosophy; it's a shared commitment to fostering meaningful connections between our sanctuary and the local community. ",
+                    "One impactful initiative involves collaborating with community members to address food waste. Through partnerships with local businesses and individuals, we intercept excess produce that might otherwise go to waste and redirect it to nourish the animals under our care."
+                ];
+                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
+                ?>
             </div>
         </div>
     </section>
-    <br>
-    <section>
-        <div>
-            <div>
-                <p>“Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.”</p>
-                <p>IMAGE</p>
-                <p>John Smith</p>            
-                <p>WWF</p>
-            </div>        
-            <div>
-                <p>“Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.”</p>
-                <p>IMAGE</p>
-                <p>John Smith</p>            
-                <p>WWF</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <p>A range of habitats</p>
-                <p>Immerse yourself in the world of our incredible creatures with our unique viewing areas! Explore captivating viewpoints in our gardens, woodlands, and wetlands, allowing you to get up close to the wonders of nature. </p>
-                <p>Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife.</p>
-            </div>
-            <div>
-                <p>Sustainable approach</p>
-                <p>From energy-efficient facilities to waste reduction initiatives, our commitment to sustainability extends to habitat preservation and wildlife conservation.</p>
-                <p>We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony.</p>
-            </div>
-            <div>
-                <p>Community engagement</p>
-                <p>Community engagement is not just a philosophy; it's a shared commitment to fostering meaningful connections between our sanctuary and the local community. </p>
-                <p>One impactful initiative involves collaborating with community members to address food waste. Through partnerships with local businesses and individuals, we intercept excess produce that might otherwise go to waste and redirect it to nourish the animals under our care.</p>
-            </div>
-        </div>
-    </section>
+    <?php    
+    require('partials/banner.php');
+    ?>
 </main>
 <?php
-require('partials/banner.php');
 require('partials/footer.php');
 ?>
