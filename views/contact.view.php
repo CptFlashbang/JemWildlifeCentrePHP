@@ -9,7 +9,8 @@ require('partials/blocks.php');
     ?>
     <section class=" flex-grow mx-auto py-6 px-8 border-b-2 border-black">
         <h3>Before sending us a message, here are some things you should know:</h3>      
-    <?php        
+    <?php
+    //$questions and $answers are currently located in the controller        
     foreach ($questions as $key => $question) {
         echo '<div class="question">' . $question . '</div>';
         
