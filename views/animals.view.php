@@ -28,6 +28,17 @@ require('partials/header.php');
         } 
     ?>
 
+    <div class="grid grid-cols-3 gap-4">
+        <?php foreach ($animals as $animal): ?>
+            <div class="bg-green-700 p-4">
+                <p>PICTURE</p>
+                <p><?= $animal['Name'] ?></p>
+                <p><?= $animal['Sex'] ?></p>
+                <p>General_Appearance</p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
     
 
     <!-- <div>
