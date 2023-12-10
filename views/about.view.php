@@ -32,14 +32,8 @@ require('partials/blocks.php');
                     <p class="py-4 max-w-prose">We recognize and honor the intrinsic value of every creature and the natural world, promoting respect for biodiversity and ecosystems.</p>
                 </div>
                 <div class="col-start-2 col-end-3 row-start-3 row-end-4 mx-auto py-6 px-8">
-                    <?php
-                    $headerLevel = 3; 
-                    $headerContent = "Wildlife in the community";
-                    $contents = [
-                        "We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.",
-                    ];
-                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                    ?>
+                    <h3>Wildlife in the community</h3>
+                    <p class="py-4 max-w-prose">We actively engage with our local community, building partnerships and collaborations that promote a shared commitment to wildlife conservation.</p>
                 </div>
             </div>
         </div>
