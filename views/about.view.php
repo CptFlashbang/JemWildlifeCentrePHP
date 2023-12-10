@@ -24,14 +24,8 @@ require('partials/blocks.php');
                     <p class="py-4 max-w-prose">We are driven by a deep empathy for every living being, fostering compassion in our actions and decisions.</p>
                 </div>
                 <div class="col-start-2 col-end-3 row-start-2 row-end-3 mx-auto py-6 px-8">
-                    <?php
-                    $headerLevel = 3; 
-                    $headerContent = "Dedication to Rehabilitation";
-                    $contents = [
-                        "We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.",
-                    ];
-                    generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                    ?>
+                    <h3>Dedication to Rehabilitation</h3>
+                    <p class="py-4 max-w-prose">We are committed to the rehabilitation and well-being of sick, injured, and orphaned wildlife, striving to give each animal a chance for a healthy and fulfilling life.</p>
                 </div>
                 <div class="col-start-1 col-end-2 row-start-3 row-end-4 mmx-auto py-6 px-8">
                     <?php
