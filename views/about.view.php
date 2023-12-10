@@ -68,15 +68,9 @@ require('partials/blocks.php');
                 <p class="py-4 max-w-prose">Whether it's the tranquillity of ponds, or the diverse habitats of farmlands and meadows, our viewing areas offer an intimate connection with the beauty of wildlife.</p>
             </div>
             <div class="mx-auto max-w-5xl py-6 px-8">
-                <?php
-                $headerLevel = 2; 
-                $headerContent = "Sustainable approach";
-                $contents = [
-                    "From energy-efficient facilities to waste reduction initiatives, our commitment to sustainability extends to habitat preservation and wildlife conservation.",
-                    "We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony."
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
+                <h2>Sustainable approach</h2>
+                <p class="py-4 max-w-prose">From energy-efficient facilities to waste reduction initiatives, our commitment to sustainability extends to habitat preservation and wildlife conservation.</p>
+                <p class="py-4 max-w-prose">We strive to be a beacon of responsible environmental stewardship, fostering a future where both the wildlife under our care and the ecosystems they inhabit flourish in a balanced and sustainable harmony.</p>
             </div>            
             <div class="mx-auto max-w-5xl py-6 px-8">
                 <?php
