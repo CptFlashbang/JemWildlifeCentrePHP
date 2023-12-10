@@ -6,28 +6,6 @@ require('partials/header.php');
     <div class="mx-auto max-w-5xl py-6 px-8">
         <p>Hello. Welcome to the animals page.</p>
     </div>
-
-    <div class="bg-red-700">
-        <p>PICTURE</p>
-        <p>NAME</p>
-        <p>SEX</p>
-        <p>General_Appearance</p>
-    </div>
-
-    
-    <?php
-        foreach ($animals as $animal) {
-            echo (
-                "<div class=\"bg-blue-700\">" .
-                    "<p>PICTURE</p>" . 
-                    "<p>".$animal['Name']."</p>" . 
-                    "<p>".$animal['Sex']."</p>" . 
-                    "<p>General_Appearance</p>".
-                "</div>"
-            );
-        } 
-    ?>
-
     <div class="grid grid-cols-3 gap-4">
         <?php foreach ($animals as $animal): ?>
             <div class="bg-green-700 p-4">
