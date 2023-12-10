@@ -48,14 +48,8 @@ require('partials/blocks.php');
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
         <div class="grid auto-cols-max auto-rows-max">
             <div class="col-start-1 col-end-2 row-start-1 row-end-3 mt-32">
-                <?php
-                $headerLevel = 1; 
-                $headerContent = "Our residents";
-                $contents = [
-                    "Meet a few of our incredible residents! On our homepage, you'll catch a glimpse of three remarkable animals, each with its own unique story and charm. These featured creatures represent just a fraction of the diverse wildlife thriving at Jem Wildlife Centre. Curious to discover more? Click the link to explore our full roster of fascinating animals, each contributing to the rich tapestry of life we cherish and protect in our sanctuary."
-                ];
-                generateBlockHeaderAndContentVertical($headerLevel, $headerContent, $contents);
-                ?>
+                <h1>Our residents</h1>
+                <p class="py-4 max-w-prose">Meet a few of our incredible residents! On our homepage, you'll catch a glimpse of three remarkable animals, each with its own unique story and charm. These featured creatures represent just a fraction of the diverse wildlife thriving at Jem Wildlife Centre. Curious to discover more? Click the link to explore our full roster of fascinating animals, each contributing to the rich tapestry of life we cherish and protect in our sanctuary.</p>
             </div>
             <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
 
