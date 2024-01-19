@@ -17,11 +17,3 @@ require('partials/header.php');
 <?php
 require('partials/footer.php');
 ?>
-
-
-                <a href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
-                    <p>PICTURE</p>
-                    <p><?= $animal['Name'] ?></p>
-                    <p><?= $animal['Sex'] ?></p>
-                    <p>General_Appearance</p>
-                </a>
