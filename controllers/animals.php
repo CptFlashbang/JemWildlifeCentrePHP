@@ -11,9 +11,9 @@ SELECT
     Species_Information.Common_Name,
     Conservation_Status.Conservation_Status_Name
 FROM
-    Animal A
-JOIN Species_Information ON A.Species_ID_FK = S.Species_ID_PK
-JOIN Conservation_Status ON S.Conservation_Status_FK = CS.Conservation_Status_PK
+    Animal
+JOIN Species_Information ON Animal.Species_ID_FK = Species_Information.Species_ID_PK
+JOIN Conservation_Status ON Species_Information.Conservation_Status_FK = Conservation_Status.Conservation_Status_PK
 ");
 $statement->execute();
 $animals = $statement->fetchAll(PDO::FETCH_ASSOC);
