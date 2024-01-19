@@ -1,7 +1,6 @@
 <?php
 $heading = "Animal Detail";
 $config = require('config.php');
-
 $db = new Database($config['database']);
 $animal = $db->query('
 SELECT
@@ -18,6 +17,6 @@ WHERE
     Animal.ID = :id', 
 ['id' => $_GET['id']]
 )->findOrFail();
-$heading = "Animal Detail". $animal['title'] . " with ID: " . htmlspecialchars($_GET['id']);
+$heading = "Animal Detail". $animal['Name'] . " with ID: " . htmlspecialchars($_GET['id']);
 require "views/animal_detail.view.php";
 ?>
