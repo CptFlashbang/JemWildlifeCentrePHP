@@ -1,6 +1,4 @@
 <?php
-//require 'database.php';
-
 $config = require('config.php');
 $db = new Database($config['database']);
 $animal = $db->query('

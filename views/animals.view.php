@@ -8,34 +8,17 @@ require('partials/header.php');
     </div>
 
     <div class="grid grid-cols-3 gap-4">
-    <?php foreach ($animals as $animal): ?>
-        <div class="bg-green-700 p-4">
-            <a href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
-                <p>PICTURE</p>
-                <p><?= $animal['Name'] ?></p>
-                <p><?= $animal['Sex'] ?></p>
-                <p>General_Appearance</p>
-            </a>
+        <?php foreach ($animals as $animal): ?>
+            <div class="bg-green-700 p-4">
+                <a href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
+                    <p>PICTURE</p>
+                    <p><?= $animal['Name'] ?></p>
+                    <p><?= $animal['Sex'] ?></p>
+                    <p>General_Appearance</p>
+                </a>
+            </div>
+        <?php endforeach; ?>
         </div>
-    <?php endforeach; ?>
-    </div>
-
-    <?php
-        foreach ($books as $book) {
-            $output = "<li>" . "<a href='/phpapp/book?id=". $book['ID'] . "&return=books' class='text-blue-500 hover:underline'>" . $book['title'] . "</a> by " . $book['author'] ."</li>";
-            echo $output;
-        } ?>
-
-    
-
-    <!-- <div>
-        <ul class="my-3">
-            <?php
-            // foreach ($animals as $animal) {
-            //     echo "<li><strong>" . $animal['Name'] . "</strong> by <span>" . $animal['Sex'] . "</span> with " . $animal['General_Appearance'] ." pages</li>"} 
-            ?>
-        </ul>
-    </div> -->
     <?php    
     require('partials/banner.php');
     ?>
