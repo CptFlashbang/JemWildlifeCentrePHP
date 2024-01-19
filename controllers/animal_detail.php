@@ -1,5 +1,6 @@
 <?php
-$heading = "Animal Detail";
+//require 'database.php';
+
 $config = require('config.php');
 $db = new Database($config['database']);
 $animal = $db->query('
@@ -14,7 +15,7 @@ FROM
 JOIN Species_Information ON Animal.Species_ID_FK = Species_Information.Species_ID_PK
 JOIN Conservation_Status ON Species_Information.Conservation_Status_FK = Conservation_Status.Conservation_Status_PK
 WHERE
-    Animal.ID = :id', 
+    Animal.Animal_ID_PK = :id', 
 ['id' => $_GET['id']]
 )->findOrFail();
 $heading = "Animal Detail". $animal['Name'] . " with ID: " . htmlspecialchars($_GET['id']);
