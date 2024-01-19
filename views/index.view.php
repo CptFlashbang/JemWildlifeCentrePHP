@@ -39,10 +39,10 @@ require('partials/blocks.php');
         <img src="Images\Seal.jpg" class="mx-auto">
         <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16">
             <p class="text-center text-xl">Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.</p>';
-            <p>IMAGE</p>';
-            <p>IMAGE</p>';
-            <p class="font-bold">John Smith</p>';
-            <p>WWF</p>';
+            <p>IMAGE</p>
+            <p>IMAGE</p>
+            <p class="font-bold">John Smith</p>
+            <p>WWF</p>
         </div>
     </section>
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
