@@ -53,11 +53,20 @@ require('partials/blocks.php');
             </div>
             <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
 
-            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-3 row-end-4 mx-auto">
-                <img class="mx-3" src="Images\Seal.jpg">
-                <img class="mx-3" src="Images\Seal.jpg">
-                <img class="mx-3" src="Images\Seal.jpg">
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-3 row-end-4 mx-auto bg-green-600">
+                <?php foreach ($animals as $animal): ?>
+                    <div class="bg-green-700 p-4">
+                        <a href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
+                            <img class="mx-3" src="Images\Seal.jpg">
+                            <p><?= $animal['Name'] ?></p>
+                            <p><?= $animal['Sex'] ?></p>
+                            <p>General_Appearance</p>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
             </div>
+
+
         </div>
     </section>
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">

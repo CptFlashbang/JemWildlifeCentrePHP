@@ -18,7 +18,7 @@ require('partials/header.php');
                 </a>
             </div>
         <?php endforeach; ?>
-        </div>
+    </div>
     <?php    
     require('partials/banner.php');
     ?>
