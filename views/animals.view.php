@@ -10,7 +10,7 @@ require('partials/header.php');
     <div class="grid grid-cols-3 gap-4">
     <?php foreach ($animals as $animal): ?>
         <div class="bg-green-700 p-4">
-            <a href="animal_detail.php?id=<?= $animal['Animal_ID_PK'] ?>">
+            <a href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
                 <p>PICTURE</p>
                 <p><?= $animal['Name'] ?></p>
                 <p><?= $animal['Sex'] ?></p>
