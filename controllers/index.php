@@ -8,5 +8,7 @@ SELECT COUNT(*) AS total_row_count
 FROM animal;
 ')->findOrFail();
 
+$totalRowCount = $result['total_row_count'];
+
 
 require "views/index.view.php";
