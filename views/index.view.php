@@ -51,7 +51,8 @@ require('partials/blocks.php');
                 <h1>Our residents</h1>
                 <p class="py-4 max-w-prose">Meet a few of our incredible residents! On our homepage, you'll catch a glimpse of three remarkable animals, each with its own unique story and charm. These featured creatures represent just a fraction of the diverse wildlife thriving at Jem Wildlife Centre. Curious to discover more? Click the link to explore our full roster of fascinating animals, each contributing to the rich tapestry of life we cherish and protect in our sanctuary.</p>
             </div>
-            <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
+            <a href="/JemWildlifeCentrePHP/animals" class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">See more</a>
+
 
             <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-3 row-end-4 mx-auto bg-green-600">
                 <?php foreach ($animals as $animal): ?>
