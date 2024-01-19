@@ -10,5 +10,13 @@ FROM animal;
 
 $totalRowCount = $result['total_row_count'];
 
+$min = 1;
+$max = $totalRowCount; 
+
+$randomNumbers = [];
+
+for ($i = 0; $i < 3; $i++) {
+    $randomNumbers[] = rand($min, $max);
+}
 
 require "views/index.view.php";
