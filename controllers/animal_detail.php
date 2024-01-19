@@ -1,8 +1,8 @@
 <?php
-$heading = "Animal Detail". $animal['title'] . " with ID: " . htmlspecialchars($_GET['id']);
+$heading = "Animal Detail";
 $config = require('config.php');
-$dsn = 'mysql:' . http_build_query($config['database'], '', ';');
-$pdo = new PDO($dsn, 'root', '');
+
+$db = new Database($config['database']);
 $animal = $db->query('
 SELECT
     Animal.*,
@@ -18,5 +18,6 @@ WHERE
     Animal.ID = :id', 
 ['id' => $_GET['id']]
 )->findOrFail();
-require "views/animal.view.php";
+$heading = "Animal Detail". $animal['title'] . " with ID: " . htmlspecialchars($_GET['id']);
+require "views/animal_detail.view.php";
 ?>
