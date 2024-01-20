@@ -51,7 +51,7 @@ require('partials/blocks.php');
                 <h1>Our residents</h1>
                 <p class="py-4 max-w-prose">Meet a few of our incredible residents! On our homepage, you'll catch a glimpse of three remarkable animals, each with its own unique story and charm. These featured creatures represent just a fraction of the diverse wildlife thriving at Jem Wildlife Centre. Curious to discover more? Click the link to explore our full roster of fascinating animals, each contributing to the rich tapestry of life we cherish and protect in our sanctuary.</p>
             </div>
-            <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
+            <!-- <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button> -->
             <a href="/JemWildlifeCentrePHP/animals" class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">See more</a>
 
 
@@ -78,11 +78,19 @@ require('partials/blocks.php');
                 <p class="py-4 max-w-prose">Explore the excitement awaiting you at Jem Wildlife Centre! Right on our homepage, we spotlight three upcoming events designed to cater to diverse interests and age groups. Whether it's an exclusive gathering for adults, a fun-filled experience for families, or an engaging adventure tailored for children, our events promise something special for everyone.</p>
                 <p class="py-4 max-w-prose">Intrigued? Dive into the details and mark your calendar for a memorable experience. Click the link below to discover the full spectrum of events we have in store, each crafted with a touch of wonder and a commitment to wildlife education and enjoyment.</p>
             </div>
-            <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button>
+            <!-- <button class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">See more</button> -->
+            <a href="/JemWildlifeCentrePHP/events" class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">See more</a>
             <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-4 row-end-5 mx-auto">
-                <img class="mx-3" src="Images\Seal.jpg">
-                <img class="mx-3" src="Images\Seal.jpg">
-                <img class="mx-3" src="Images\Seal.jpg">
+                <?php foreach ($events as $event): ?>
+                    <div class="bg-green-700 p-4">
+                        <a href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
+                            <img class="mx-3" src="Images\Seal.jpg">
+                            <p><?= $event['Name'] ?></p>
+                            <p><?= $event['Sex'] ?></p>
+                            <p>General_Appearance</p>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
