@@ -3,22 +3,18 @@ $heading = "Home";
 
 $config = require('config.php');
 $db = new Database($config['database']);
+
 $result = $db->query('
 SELECT COUNT(*) AS total_row_count
 FROM animal;
 ')->findOrFail();
-
 $totalRowCount = $result['total_row_count'];
-
 $min = 1;
 $max = $totalRowCount; 
-
 $randomNumbers = [];
-
 for ($i = 0; $i < 3; $i++) {
     $randomNumbers[] = rand($min, $max);
 }
-
 foreach ($randomNumbers as $randomNumber) {
     $animal = $db->query('
         SELECT
@@ -35,9 +31,22 @@ foreach ($randomNumbers as $randomNumber) {
             Animal.Animal_ID_PK = :id', 
         ['id' => $randomNumber]
     )->findOrFail();
-
     $animals[] = $animal;
 }
+
+$result = $db->query('
+SELECT 
+    *
+FROM 
+    Event
+WHERE 
+    Event_Date >= CURRENT_DATE
+ORDER BY 
+    Event_Date, Start_Time
+LIMIT 3;
+')->findOrFail();
+
+
 
 
 require "views/index.view.php";
