@@ -27,6 +27,11 @@
 }
 
 @layer components {
+
+  .card-grid {
+    @apply grid grid-cols-5 gap-4 w-4/5 mx-auto;
+  }
+
   .card {
       @apply border-4 border-black rounded-md relative;
   }
