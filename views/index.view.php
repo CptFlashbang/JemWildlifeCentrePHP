@@ -81,10 +81,9 @@ require('partials/blocks.php');
             <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-4 row-end-5 mx-auto">
                 <?php foreach ($events as $event): ?>
                     <div class="bg-green-700 p-4">
-                        <a href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
                             <img class="mx-3" src="Images\Seal.jpg">
                             <p><?= $event['Event_Title'] ?></p>
-                        </a>
+                        
                     </div>
                 <?php endforeach; ?>
             </div>

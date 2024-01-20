@@ -34,19 +34,19 @@ foreach ($randomNumbers as $randomNumber) {
     $animals[] = $animal;
 }
 
-$events = $db->query('
-SELECT 
+$config = require('config.php');
+$dsn = 'mysql:' . http_build_query($config['database'], '', ';');
+$pdo = new PDO($dsn, 'root', '');
+$statement = $pdo->prepare("
+SELECT
     *
-FROM 
+FROM
     Event
-WHERE 
-    Event_Date >= CURRENT_DATE
 ORDER BY 
-    Event_Date, Start_Time
-LIMIT 3;
-')->findOrFail();
-
-
-
+        Event_Date, Start_Time
+LIMIT 3
+");
+$statement->execute();
+$events = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 require "views/index.view.php";
