@@ -37,7 +37,7 @@
   }
 
   .card-image {
-      @apply flex justify-center items-center bg-black;
+      @apply flex justify-center items-center;
   }
 
   .card-details {
