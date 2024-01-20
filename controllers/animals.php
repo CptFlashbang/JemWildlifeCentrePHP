@@ -9,7 +9,12 @@ SELECT
     Species_Information.Genus,
     Species_Information.Species,
     Species_Information.Common_Name,
-    Conservation_Status.Conservation_Status_Name
+    Conservation_Status.Conservation_Status_Name,
+    CASE Animal.Sex
+        WHEN 'M' THEN 'Male'
+        WHEN 'F' THEN 'Female'
+        ELSE 'Unknown'
+    END AS Sex
 FROM
     Animal
 JOIN Species_Information ON Animal.Species_ID_FK = Species_Information.Species_ID_PK
