@@ -34,7 +34,7 @@ foreach ($randomNumbers as $randomNumber) {
     $animals[] = $animal;
 }
 
-$result = $db->query('
+$events = $db->query('
 SELECT 
     *
 FROM 
