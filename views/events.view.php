@@ -14,6 +14,8 @@ require('partials/header.php');
                 </picture>
                 <div class="card-details">
                     <p class="card-name"><?= $event['Event_Title'] ?></p>
+                    <p><?= $event['Event_Date'] ?></p>
+                    <p><?= $event['Start_Time'] . " " . "-" . " " . $event['End_Time']?></p>
                 </div>
             </a>
         <?php endforeach; ?>
