@@ -6,7 +6,7 @@ require('partials/header.php');
     <div class="bg-green-700">
             <p>PICTURE</p>
             <p><?= $event['Event_ID_PK'] ?></p>
-            <p><?= $event['Name'] ?></p>
+            <p><?= $event['Event_Title'] ?></p>
     </div>
     <?php    
     require('partials/banner.php');

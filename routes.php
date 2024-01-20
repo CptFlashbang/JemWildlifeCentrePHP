@@ -5,6 +5,6 @@ return [
     '/JemWildlifeCentrePHP/animals' => 'controllers/animals.php',
     '/JemWildlifeCentrePHP/animal_detail' => 'controllers/animal_detail.php',
     '/JemWildlifeCentrePHP/events' => 'controllers/events.php',
-    '/JemWildlifeCentrePHP/contact' => 'controllers/contact.php',
-    
+    '/JemWildlifeCentrePHP/event_detail' => 'controllers/event_detail.php',
+    '/JemWildlifeCentrePHP/contact' => 'controllers/contact.php',    
 ];

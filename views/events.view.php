@@ -11,7 +11,7 @@ require('partials/header.php');
             <div class="bg-green-700 p-4">
                 <a href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
                     <p>PICTURE</p>
-                    <p><?= $event['Name'] ?></p>
+                    <p><?= $event['Event_Title'] ?></p>
                 </a>
             </div>
         <?php endforeach; ?>
