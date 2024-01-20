@@ -9,12 +9,12 @@ require('partials/header.php');
 
     <div class="grid grid-cols-5 gap-4 w-4/5 mx-auto">
         <?php foreach ($animals as $animal): ?>
-            <a class="border-4 border-black rounded-md relative" href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
-                <picture class="flex justify-center items-center bg-black">
+            <a class="card" href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
+                <picture class="card-image">
                     <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
                 </picture>
-                <div class="p-4">
-                    <p class="text-xl font-bold"><?= $animal['Name'] ?></p> <!-- Increased font size -->
+                <div class="card-details">
+                    <p class="card-name"><?= $animal['Name'] ?></p>
                     <p><?= $animal['Common_Name'] ?></p>
                     <p><?= $animal['Sex'] ?></p>
                 </div>
