@@ -1,0 +1,17 @@
+<?php
+require('partials/head.php');
+require('partials/header.php');
+?>
+<main class="flex-grow">    
+    <div class="bg-green-700">
+            <p>PICTURE</p>
+            <p><?= $event['Event_ID_PK'] ?></p>
+            <p><?= $event['Name'] ?></p>
+    </div>
+    <?php    
+    require('partials/banner.php');
+    ?>
+</main>
+<?php
+require('partials/footer.php');
+?>
