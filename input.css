@@ -25,3 +25,21 @@
     font-family: 'Roboto', sans-serif;
   }
 }
+
+@layer components {
+  .card {
+      @apply border-4 border-black rounded-md relative;
+  }
+
+  .card-image {
+      @apply flex justify-center items-center bg-black;
+  }
+
+  .card-details {
+      @apply p-4;
+  }
+
+  .card-name {
+      @apply text-xl font-bold;
+  }
+}
