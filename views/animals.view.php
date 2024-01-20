@@ -7,16 +7,18 @@ require('partials/header.php');
         <p>Hello. Welcome to the animals page.</p>
     </div>
 
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4 w-4/5 mx-auto">
         <?php foreach ($animals as $animal): ?>
-            <div class="bg-green-700 p-4">
-                <a href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
-                    <p>PICTURE</p>
-                    <p><?= $animal['Name'] ?></p>
+            <a class="border-4 border-black rounded-md relative" href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
+                <picture class="flex justify-center items-center bg-black">
+                    <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
+                </picture>
+                <div class="p-4">
+                    <p class="text-xl font-bold"><?= $animal['Name'] ?></p> <!-- Increased font size -->
+                    <p><?= $animal['Common_Name'] ?></p>
                     <p><?= $animal['Sex'] ?></p>
-                    <p>General_Appearance</p>
-                </a>
-            </div>
+                </div>
+            </a>
         <?php endforeach; ?>
     </div>
     <?php    
