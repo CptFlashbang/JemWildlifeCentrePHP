@@ -6,14 +6,16 @@ require('partials/header.php');
     <div class="mx-auto max-w-5xl py-6 px-8">
         <p>Hello. Welcome to the events page.</p>
     </div>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-5 gap-4 w-4/5 mx-auto">
         <?php foreach ($events as $event): ?>
-            <div class="bg-green-700 p-4">
-                <a href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
-                    <p>PICTURE</p>
-                    <p><?= $event['Event_Title'] ?></p>
-                </a>
-            </div>
+            <a class="card" href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
+                <picture class="card-image">
+                    <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
+                </picture>
+                <div class="card-details">
+                    <p class="card-name"><?= $event['Event_Title'] ?></p>
+                </div>
+            </a>
         <?php endforeach; ?>
     </div>
     <?php    
