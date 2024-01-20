@@ -7,7 +7,7 @@ require('partials/header.php');
         <p>Hello. Welcome to the animals page.</p>
     </div>
 
-    <div class="card-grid">
+    <div class="grid grid-cols-5 gap-4 w-4/5 mx-auto">
         <?php foreach ($animals as $animal): ?>
             <a class="card" href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
                 <picture class="card-image">
