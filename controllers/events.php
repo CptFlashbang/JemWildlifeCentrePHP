@@ -18,7 +18,9 @@ SELECT
     END AS Age_Rating,
     Event_Notes
 FROM
-    Event;
+    Event
+ORDER BY
+    Event_Date, Start_Time;
 ");
 $statement->execute();
 $events = $statement->fetchAll(PDO::FETCH_ASSOC);
