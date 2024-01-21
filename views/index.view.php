@@ -52,11 +52,9 @@ require('partials/blocks.php');
                 <p class="py-4 max-w-prose">Meet a few of our incredible residents! On our homepage, you'll catch a glimpse of three remarkable animals, each with its own unique story and charm. These featured creatures represent just a fraction of the diverse wildlife thriving at Jem Wildlife Centre. Curious to discover more? Click the link to explore our full roster of fascinating animals, each contributing to the rich tapestry of life we cherish and protect in our sanctuary.</p>
             </div>
             <a href="/JemWildlifeCentrePHP/animals" class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">See more</a>
-
-
-            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-3 row-end-4 mx-auto bg-green-600">
-                <?php foreach ($animals as $animal): ?>
-                    <div class="grid grid-cols-5 gap-4 w-4/5 mx-auto">
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-3 row-end-4 mx-auto">
+                <div class="grid grid-cols-3 gap-4 w-4/5 mx-auto">
+                    <?php foreach ($animals as $animal): ?>
                         <a class="card" href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
                             <picture class="card-image">
                                 <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
@@ -67,11 +65,9 @@ require('partials/blocks.php');
                                 <p><?= $animal['Sex'] ?></p>
                             </div>
                         </a>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
-
-
         </div>
     </section>
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
@@ -82,14 +78,22 @@ require('partials/blocks.php');
                 <p class="py-4 max-w-prose">Intrigued? Dive into the details and mark your calendar for a memorable experience. Click the link below to discover the full spectrum of events we have in store, each crafted with a touch of wonder and a commitment to wildlife education and enjoyment.</p>
             </div>
             <a href="/JemWildlifeCentrePHP/events" class="col-start-2 col-end-3 row-start-2 row-end-3 my-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">See more</a>
-            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-4 row-end-5 mx-auto">
-                <?php foreach ($events as $event): ?>
-                    <div class="bg-green-700 p-4">
-                            <img class="mx-3" src="Images\Seal.jpg">
-                            <p><?= $event['Event_Title'] ?></p>
-                        
-                    </div>
-                <?php endforeach; ?>
+            <div class="flex flex-row mt-20 mb-32 col-start-1 col-end-3 row-start-4 row-end-5 mx-auto">                
+                <div class="grid grid-cols-3 gap-4 w-4/5 mx-auto">
+                    <?php foreach ($events as $event): ?>
+                        <a class="card" href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
+                            <picture class="card-image">
+                                <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
+                            </picture>
+                            <div class="card-details">
+                                <p class="card-name"><?= $event['Event_Title'] ?></p>
+                                <p><?= $event['Formatted_Event_Date'] ?></p>
+                                <p><?= $event['Formatted_Start_Time'] . " " . "-" . " " . $event['Formatted_End_Time']?></p>
+                                <p><?= $event['Age_Rating'] ?></p>
+                            </div>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
     </section>
