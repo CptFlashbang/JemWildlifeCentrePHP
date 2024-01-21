@@ -1,13 +1,13 @@
 CREATE TABLE `Conservation_Status` (
   `Conservation_Status_PK` int(1) NOT NULL,
   `Abbreviation` varchar(2) DEFAULT NULL,
-  `Conservation_Status_Name` varchar(25) DEFAULT NULL,
+  `Conservation_Status_Name` varchar(25) DEFAULT NULL
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
     
-    ALTER TABLE `Conservation_Status`
-  ADD PRIMARY KEY (`Conservation_Status_PK`);
 ALTER TABLE `Conservation_Status`
-  MODIFY `Conservation_Status_PK` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+ADD PRIMARY KEY (`Conservation_Status_PK`);
+ALTER TABLE `Conservation_Status`
+MODIFY `Conservation_Status_PK` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 
 CREATE TABLE `Species_Information` (
@@ -15,7 +15,7 @@ CREATE TABLE `Species_Information` (
   `Genus` varchar(30) DEFAULT NULL,
   `Species` varchar(30) DEFAULT NULL,
   `Common_Name` varchar(50) DEFAULT NULL,
-  `Conservation_Status_FK` int(10) NOT NULL
+  `Conservation_Status_FK` int(10) NOT NULL,
   PRIMARY KEY (`Species_ID_PK`),
   FOREIGN KEY (`Conservation_Status_FK`) REFERENCES `Conservation_Status`(`Conservation_Status_PK`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -28,7 +28,7 @@ CREATE TABLE `Animal` (
     `General_Appearance` varchar(200) DEFAULT NULL,
     `Distinctive_Markings` varchar(200) DEFAULT NULL,
     `Date_Of_Admission` DATE DEFAULT NULL,
-    `Location_Found` varchar(200) DEFAULT NULL
+    `Location_Found` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`Animal_ID_PK`),
   FOREIGN KEY (`Species_ID_FK`) REFERENCES `Species_Information`(`Species_ID_PK`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
