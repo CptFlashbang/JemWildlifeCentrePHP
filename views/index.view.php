@@ -23,11 +23,9 @@ require('partials/blocks.php');
         <div class="flex flex-col items-center mx-auto my-auto">
             <p>We have had the privilege of collaborating with these incredible conservation partners. </p>
             <div class="flex flex-row">
-                <p class="px-4">PARTNER 1</p>
-                <p class="px-4">PARTNER 2</p>
-                <p class="px-4">PARTNER 3</p>
-                <p class="px-4">PARTNER 4</p>
-                <p class="px-4">PARTNER 5</p>
+                <p class="px-4">WWF</p>
+                <p class="px-4">UN</p>
+                <p class="px-4">DofE Enviromental Trust</p>
             </div>            
         </div>
     </section>
@@ -38,11 +36,8 @@ require('partials/blocks.php');
         </div>
         <img src="Images\Seal.jpg" class="mx-auto">
         <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16">
-            <p class="text-center text-xl">Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.</p>';
-            <p>IMAGE</p>
-            <p>IMAGE</p>
+            <p class="text-center text-xl">Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.</p>
             <p class="font-bold">John Smith</p>
-            <p>WWF</p>
         </div>
     </section>
     <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
