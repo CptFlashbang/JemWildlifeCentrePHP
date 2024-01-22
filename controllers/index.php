@@ -22,7 +22,8 @@ foreach ($randomNumbers as $randomNumber) {
             Species_Information.Genus,
             Species_Information.Species,
             Species_Information.Common_Name,
-            Conservation_Status.Conservation_Status_Name
+            Conservation_Status.Conservation_Status_Name,
+            Species_information.image_path
         FROM
             Animal
         JOIN Species_Information ON Animal.Species_ID_FK = Species_Information.Species_ID_PK
