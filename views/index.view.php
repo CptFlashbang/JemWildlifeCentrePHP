@@ -83,7 +83,7 @@ require('partials/blocks.php');
                     <?php foreach ($events as $event): ?>
                         <a class="card" href="/JemWildlifeCentrePHP/event_detail?id=<?= $event['Event_ID_PK'] ?>">
                             <picture class="card-image">
-                                <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
+                                <img src="<?= $event['image_path'] ?>" alt="<?= $event['Event_Title'] ?>">
                             </picture>
                             <div class="card-details">
                                 <p class="card-name"><?= $event['Event_Title'] ?></p>

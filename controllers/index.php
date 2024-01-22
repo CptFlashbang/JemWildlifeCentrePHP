@@ -51,7 +51,8 @@ SELECT
         WHEN 2 THEN 'Suitable for families'
         WHEN 3 THEN 'Suitable for children'
     END AS Age_Rating,
-    Event_Notes
+    Event_Notes,
+    image_path
 FROM
     Event
 ORDER BY
