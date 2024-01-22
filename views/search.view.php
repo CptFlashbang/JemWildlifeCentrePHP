@@ -1,16 +1,19 @@
 <?php
 require('partials/head.php');
-require('partials/nav.php');
-require('partials/banner.php');
+require('partials/header.php');
 ?>
-<main>
+<main class="flex-grow">
+    <div class="mx-auto max-w-5xl py-6 px-8">
+        <p>Hello. Welcome to the events page.</p>
+    </div>
+    <section class="border-b-2 border-black bg-white mx-auto flex justify-center">
     <div class="mx-auto max-w-7xl py-6 px-8">
         <p class="mb-4">Please enter part of the title of the event you are looking for</p>
         <form method="get">
-            <label for="txtSearch" class="block text-sm font-medium leading-6 text-gray-900">Title</label>
+            <label for="txtSearch" class="block text-sm font-medium leading-6 text-gray-900">Event Title</label>
             <div class="mt-2">
                 <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                    <input type="text" name="title" id="title" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" required value="<?= isset($_GET['title']) ? htmlspecialchars($_GET['title']) : '' ?>">
+                    <input type="text" name="Event_Title" id="Event_Title" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" required value="<?= isset($_GET['Event_Title']) ? htmlspecialchars($_GET['Event_Title']) : '' ?>">
                     <button type="submit" class="btn">Search</button>
                 </div>
             </div>
@@ -18,14 +21,18 @@ require('partials/banner.php');
         <p class="mt-4 mb-2"><?= $records ?></p>
         <ul>
             <?php
-            foreach ($books as $book) {
-                $output = "<li>" . "<a href='/phpapp/book?id=" . $book['ID'] . "&return=" . $return . "' class='text-blue-500 hover:underline'>" . $book['title'] . "</a> by " . $book['author'] . "</li>";
+            foreach ($events as $event) {
+                $output = "<li>" . "<a href='/JemWildlifeCentrePHP/event?id=" . $event['Event_ID_PK'] . "&return=" . $return . "' class='text-blue-500 hover:underline'>" . $event['Event_Title'] . "</a> " . $event['Event_Description'] . "</li>";
                 echo $output;
             } ?>
         </ul>
     </div>
-</main>
 
+    </section>
+    <?php    
+    require('partials/banner.php');
+    ?>
+</main>
 <?php
 require('partials/footer.php');
 ?>
