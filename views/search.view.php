@@ -5,7 +5,7 @@ require('partials/banner.php');
 ?>
 <main>
     <div class="mx-auto max-w-7xl py-6 px-8">
-        <p class="mb-4">Please enter part of the title of the book you are looking for</p>
+        <p class="mb-4">Please enter part of the title of the event you are looking for</p>
         <form method="get">
             <label for="txtSearch" class="block text-sm font-medium leading-6 text-gray-900">Title</label>
             <div class="mt-2">
