@@ -7,5 +7,5 @@ return [
     '/JemWildlifeCentrePHP/events' => 'controllers/events.php',
     '/JemWildlifeCentrePHP/event_detail' => 'controllers/event_detail.php',
     '/JemWildlifeCentrePHP/contact' => 'controllers/contact.php',    
-    '/phpapp/search' => 'controllers/search.php'
+    '/JemWildlifeCentrePHP/search' => 'controllers/search.php'
 ];
