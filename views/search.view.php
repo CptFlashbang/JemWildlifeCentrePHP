@@ -22,7 +22,7 @@ require('partials/header.php');
     <ul>
         <?php
         foreach ($events as $event) {
-            $output = "<li>" . "<a href='/JemWildlifeCentrePHP/event?id=" . $event['Event_ID_PK'] . "&return=" . $return . "' class='text-blue-500 hover:underline'>" . $event['Event_Title'] . "</a> " . $event['Event_Description'] . "</li>";
+            $output = "<li>" . "<a href='/JemWildlifeCentrePHP/event_detail?id=" . $event['Event_ID_PK'] . "&return=" . $return . "' class='text-blue-500 hover:underline'>" . $event['Event_Title'] . "</a> " . $event['Event_Description'] . "</li>";
             echo $output;
         } ?>
     </ul>
