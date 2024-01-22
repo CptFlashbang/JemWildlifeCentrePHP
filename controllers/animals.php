@@ -14,7 +14,8 @@ SELECT
         WHEN 'M' THEN 'Male'
         WHEN 'F' THEN 'Female'
         ELSE 'Unknown'
-    END AS Sex
+    END AS Sex,    
+    Species_information.image_path
 FROM
     Animal
 JOIN Species_Information ON Animal.Species_ID_FK = Species_Information.Species_ID_PK
