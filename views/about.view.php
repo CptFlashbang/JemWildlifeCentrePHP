@@ -40,20 +40,14 @@ require('partials/blocks.php');
     </section>    
     <section class="border-b-2 border-black">
         <div class="flex flex-row">
-            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
-                <p class="text-center text-xl">Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.</p>';
-                <p>IMAGE</p>';
-                <p>IMAGE</p>';
-                <p class="font-bold">John Smith</p>';
-                <p>WWF</p>';
-            </div>   
-            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16 border-2 border-black">
-                <p class="text-center text-xl">Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.</p>';
-                <p>IMAGE</p>';
-                <p>IMAGE</p>';
-                <p class="font-bold">John Smith</p>';
-                <p>WWF</p>';
-            </div>      
+            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16">
+                <p class="text-center text-xl">Partnering with the Jem Wildlife Centre has been an absolute delight, and we eagerly anticipate engaging their expertise in our shared commitment to wildlife conservation.</p>
+                <p class="font-bold">John Smith</p>
+            </div>
+            <div class="w-3/5 mx-auto max-w-screen-sm flex flex-col items-center mt-40 mb-16">
+                <p class="text-center text-xl">Collaborating with the Jem Wildlife Centre has been a true pleasure, and we look forward to continuing this partnership. </p>
+                <p class="font-bold">Jane Doe</p>
+            </div>  
         </div>
         <div class="flex flex-row">
             <div class="mx-auto max-w-5xl py-6 px-8">

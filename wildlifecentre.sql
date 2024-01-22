@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2024 at 02:24 AM
+-- Generation Time: Jan 22, 2024 at 04:28 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `wildlifecentre`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `age_ratings`
+--
+
+CREATE TABLE `age_ratings` (
+  `Age_Rating_PK` int(11) NOT NULL,
+  `Event_Rating` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `age_ratings`
+--
+
+INSERT INTO `age_ratings` (`Age_Rating_PK`, `Event_Rating`) VALUES
+(1, 'Adults'),
+(2, 'Family'),
+(3, 'Children');
 
 -- --------------------------------------------------------
 
@@ -132,6 +152,39 @@ INSERT INTO `conservation_status` (`Conservation_Status_PK`, `Abbreviation`, `Co
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `event`
+--
+
+CREATE TABLE `event` (
+  `Event_ID_PK` int(11) NOT NULL,
+  `Event_Title` varchar(255) DEFAULT NULL,
+  `Event_Description` text DEFAULT NULL,
+  `Event_Date` date DEFAULT NULL,
+  `Start_Time` time DEFAULT NULL,
+  `End_Time` time DEFAULT NULL,
+  `Age_Rating_FK` int(11) DEFAULT NULL,
+  `Event_Notes` text DEFAULT NULL,
+  `image_path` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `event`
+--
+
+INSERT INTO `event` (`Event_ID_PK`, `Event_Title`, `Event_Description`, `Event_Date`, `Start_Time`, `End_Time`, `Age_Rating_FK`, `Event_Notes`, `image_path`) VALUES
+(1, 'Wildlife Photography Workshop', 'A session where adults can learn wildlife photography techniques from a professional photographer, with opportunities to capture images of the resident wildlife.', '2024-12-05', '18:00:00', '20:30:00', 1, 'Evening times are chosen to allow for optimal lighting conditions during the photography session.', 'Images/WildlifePhotographyWorkshop.jpg'),
+(2, 'Nocturnal Wildlife Encounter', 'An evening event focused on nocturnal animals. Participants could take part in guided walks, learn about nighttime wildlife habits, and perhaps witness the release of rehabilitated nocturnal animals back into the wild.', '2024-12-12', '20:00:00', '22:00:00', 1, 'This event is scheduled in the evening to align with the nocturnal behavior of certain wildlife.', 'Images/NocturnalWildlifeEncounter.jpg'),
+(3, 'Conservation Lecture Series', 'Inviting guest speakers, wildlife experts, and conservationists to give talks on various topics such as local biodiversity, conservation challenges, and success stories.', '2024-12-15', '19:30:00', '21:00:00', 1, 'Evening times provide a convenient slot for working adults to attend after regular working hours.', 'Images/ConservationLectureSeries.jpg'),
+(4, 'Nature Scavenger Hunt', 'A family-friendly scavenger hunt around the rehabilitation center\'s grounds, encouraging participants to discover and learn about local flora and fauna.', '2024-12-08', '10:00:00', '12:00:00', 2, 'Morning times are often suitable for families with children.', 'Images/NatureScavengerHunt.jpg'),
+(5, 'Animal Care Workshops', 'Interactive workshops for families, providing insights into the daily care routines of the wildlife center. Participants might assist in preparing food for the animals, creating enrichment activities, etc.', '2024-12-09', '14:00:00', '16:00:00', 2, 'Afternoon times are chosen to allow families to participate after lunch.', 'Images/AnimalCareWorkshops.jpg'),
+(6, 'Guided Wildlife Walks', 'Family-oriented guided walks with experts who share information about the wildlife residing in the area and the rehabilitation efforts undertaken by the center.', '2024-12-16', '13:30:00', '15:30:00', 2, 'Afternoon times are suitable for families to enjoy a guided walk.', 'Images/GuidedWildlifeWalks.jpg'),
+(7, 'Junior Wildlife Ranger Day', 'A day for children to experience being junior wildlife rangers, including educational games, hands-on activities, and a \"graduation\" ceremony.', '2024-12-02', '09:30:00', '15:30:00', 3, 'Includes a 1-hour break for lunch.', 'Images/JuniorWildlifeRangerDay.jpg'),
+(8, 'Animal Art and Craft Workshop', 'A creative session where children can engage in art and craft activities related to wildlife. This could include making animal masks, painting rocks as animals, or creating bird feeders.', '2024-12-10', '14:30:00', '16:30:00', 3, 'Afternoon times provide a creative outlet for children.', 'Images/AnimalArtandCraftWorkshop.jpg'),
+(9, 'Storytime with Wildlife', 'A storytelling event where wildlife-themed stories are read aloud to children, followed by a visit to see some of the animals mentioned in the stories.', '2024-12-14', '11:00:00', '12:00:00', 3, 'Late morning times are suitable for story sessions.', 'Images/StorytimewithWildlife.avif');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `species_information`
 --
 
@@ -140,30 +193,37 @@ CREATE TABLE `species_information` (
   `Common_Name` varchar(50) DEFAULT NULL,
   `Genus` varchar(30) DEFAULT NULL,
   `Species` varchar(30) DEFAULT NULL,
-  `Conservation_Status_FK` int(10) NOT NULL
+  `Conservation_Status_FK` int(10) NOT NULL,
+  `image_path` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `species_information`
 --
 
-INSERT INTO `species_information` (`Species_ID_PK`, `Common_Name`, `Genus`, `Species`, `Conservation_Status_FK`) VALUES
-(1, 'European Hedgehog', 'Erinaceus', 'europaeus', 7),
-(2, 'Red Fox', 'Vulpes', 'vulpes', 7),
-(3, 'European Badger', 'Meles', 'meles', 7),
-(4, 'Roe Deer', 'Odocoileus', 'virginianus', 7),
-(5, 'Common Pipistrelle', 'Pipistrellus', 'pipistrellus', 7),
-(6, 'Common Toad', 'Bufo', 'bufo', 7),
-(7, 'Soprano Pipistrelle', 'Pipistrellus', 'pygmaeus', 7),
-(8, 'Common Frog', 'Rana', 'temporaria', 7),
-(9, 'Red Deer', 'Cervus', 'elaphus', 7),
-(10, 'Common Shrew', 'Sorex', 'araneus', 7),
-(11, 'Barn Owl', 'Tyto', 'alba', 5),
-(12, 'Skylark', 'Alauda', 'arvensis', 5);
+INSERT INTO `species_information` (`Species_ID_PK`, `Common_Name`, `Genus`, `Species`, `Conservation_Status_FK`, `image_path`) VALUES
+(1, 'European Hedgehog', 'Erinaceus', 'europaeus', 7, 'Images/EuropeanHedgehog.avif'),
+(2, 'Red Fox', 'Vulpes', 'vulpes', 7, 'Images/RedFox.jpg'),
+(3, 'European Badger', 'Meles', 'meles', 7, 'Images/EuropeanBadger.jpg'),
+(4, 'Roe Deer', 'Odocoileus', 'virginianus', 7, 'Images/RoeDeer.jpg'),
+(5, 'Common Pipistrelle', 'Pipistrellus', 'pipistrellus', 7, 'Images/CommonPipistrelle.jpg'),
+(6, 'Common Toad', 'Bufo', 'bufo', 7, 'Images/CommonToad.jpg'),
+(7, 'Soprano Pipistrelle', 'Pipistrellus', 'pygmaeus', 7, 'Images/SopranoPipistrelle.jpg'),
+(8, 'Common Frog', 'Rana', 'temporaria', 7, 'Images/CommonFrog.jpg'),
+(9, 'Red Deer', 'Cervus', 'elaphus', 7, 'Images/RedDeer.jpg'),
+(10, 'Common Shrew', 'Sorex', 'araneus', 7, 'Images/CommonShrew.jpg'),
+(11, 'Barn Owl', 'Tyto', 'alba', 5, 'Images/BarnOwl.jpg'),
+(12, 'Skylark', 'Alauda', 'arvensis', 5, 'Images/Skylark.jpg');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `age_ratings`
+--
+ALTER TABLE `age_ratings`
+  ADD PRIMARY KEY (`Age_Rating_PK`);
 
 --
 -- Indexes for table `animal`
@@ -177,6 +237,12 @@ ALTER TABLE `animal`
 --
 ALTER TABLE `conservation_status`
   ADD PRIMARY KEY (`Conservation_Status_PK`);
+
+--
+-- Indexes for table `event`
+--
+ALTER TABLE `event`
+  ADD PRIMARY KEY (`Event_ID_PK`);
 
 --
 -- Indexes for table `species_information`

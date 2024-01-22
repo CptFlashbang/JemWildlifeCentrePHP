@@ -12,7 +12,7 @@ require('partials/header.php');
             <?php foreach ($animals as $animal): ?>
                 <a class="card" href="/JemWildlifeCentrePHP/animal_detail?id=<?= $animal['Animal_ID_PK'] ?>">
                     <picture class="card-image">
-                        <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
+                    <img src="<?= $animal['image_path'] ?>" alt="<?= $animal['Name'] ?>">
                     </picture>
                     <div class="card-details">
                         <p class="card-name"><?= $animal['Name'] ?></p>

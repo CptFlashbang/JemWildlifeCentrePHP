@@ -14,11 +14,14 @@ SELECT
         WHEN 'M' THEN 'Male'
         WHEN 'F' THEN 'Female'
         ELSE 'Unknown'
-    END AS Sex
+    END AS Sex,    
+    Species_information.image_path
 FROM
     Animal
 JOIN Species_Information ON Animal.Species_ID_FK = Species_Information.Species_ID_PK
 JOIN Conservation_Status ON Species_Information.Conservation_Status_FK = Conservation_Status.Conservation_Status_PK
+ORDER BY
+    Animal.Animal_ID_PK
 ");
 $statement->execute();
 $animals = $statement->fetchAll(PDO::FETCH_ASSOC);
