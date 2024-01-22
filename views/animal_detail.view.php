@@ -10,8 +10,11 @@ require('partials/header.php');
             </picture>
             <div class="card-details">
                 <p class="card-name"><?= $animal['Name'] ?></p>
-                <p><?= $animal['Common_Name'] ?></p>
-                <p><?= $animal['Sex'] ?></p>
+                <p>Common_Name: <?= $animal['Common_Name'] ?></p>
+                <p>Sex: <?= $animal['Sex'] ?></p>
+                <p>Genus: <?= $animal['Genus'] ?></p>
+                <p>Species: <?= $animal['Species'] ?></p>
+                <p>Distinctive Markings: <?= $animal['Distinctive_Markings'] ?></p>                
             </div>
         </div>
     </div>
