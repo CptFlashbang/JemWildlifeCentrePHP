@@ -6,7 +6,7 @@ require('partials/header.php');
     <div class="w-4/5 mx-auto">
         <div class="card">
             <picture class="card-image">
-                <img src="Images\Seal.jpg" alt="<?= $animal['Name'] ?>">
+            <img src="<?= $animal['image_path'] ?>" alt="<?= $animal['Name'] ?>">
             </picture>
             <div class="card-details">
                 <p class="card-name"><?= $animal['Name'] ?></p>
