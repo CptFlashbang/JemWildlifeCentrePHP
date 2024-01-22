@@ -3,8 +3,8 @@ require('partials/head.php');
 require('partials/header.php');
 ?>
 <main class="flex-grow">    
-    <div class="bg-green-700">
-            <p>PICTURE</p>
+    <div class="">
+            <img src="<?= $event['image_path'] ?>" alt="<?= $event['Event_Title'] ?>">
             <p><?= $event['Event_ID_PK'] ?></p>
             <p><?= $event['Event_Title'] ?></p>
     </div>
